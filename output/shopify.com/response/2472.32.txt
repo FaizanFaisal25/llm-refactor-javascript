@@ -1,0 +1,2 @@
+let e=function(e){return e.Error=`website_error_event/1.1`,e.Form=`website_form_event/2.0`,e.PrivacySignal=`website_privacy_signal/1.0`,e}({});export{e as t};
+//# sourceMappingURL=types-0iy7mvnT.js.map

@@ -1,0 +1,2 @@
+import{o as e}from"./PricingData-DfEm_-bJ.js";function t(){let{site:t}=e();return t.currencyCode||`USD`}const n=(e=`en-US`,t=`USD`,n=0,a={})=>t===`JPY`&&a.currency!==`USD`?i(e,n,a):r(e,t,n,a);function r(e,t,n,r){return new Intl.NumberFormat(e,{style:`currency`,currencyDisplay:`symbol`,currency:t,minimumFractionDigits:r.maximumFractionDigits,...r}).format(n)}function i(e,t,n){return`${new Intl.NumberFormat(e,{...n,style:`decimal`,minimumFractionDigits:0,maximumFractionDigits:0}).format(t)}円`}export{t as n,n as t};
+//# sourceMappingURL=formatCurrency-YUUMpj09.js.map

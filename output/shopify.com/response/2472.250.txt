@@ -1,0 +1,76 @@
+var C=Object.defineProperty;var k=(h,e,t)=>e in h?C(h,e,{enumerable:!0,configurable:!0,writable:!0,value:t}):h[e]=t;var n=(h,e,t)=>k(h,typeof e!="symbol"?e+"":e,t);const T={layoutShift:["#ff4757","#ff6b7a","#ff8c94","#ffb3ba","#ffd6cc","#ff9ff3","#f368e0","#ff3838","#ff6348","#ffa502"],longTask:["#3742fa","#5352ed","#70a1ff","#40739e","#487eb0","#0097e6","#8c7ae6","#9c88ff","#7bed9f","#74b9ff"],pageStable:["#2ed573","#1dd1a1","#00d2d3","#54a0ff","#5f27cd","#00d2d3","#ff9ff3","#ff6348","#ffa502","#2ed573"],cacheNetworkClean:["#26de81","#20bf6b","#2ed573","#7bed9f","#55efc4","#81ecec","#74b9ff","#00cec9","#6c5ce7","#a29bfe"],cacheNetworkDirty:["#fd79a8","#e84393","#f39c12","#e67e22","#e74c3c","#c0392b","#9b59b6","#8e44ad","#f39c12","#d35400"],loaderComplete:["#00b894","#00cec9","#55efc4","#81ecec","#74b9ff","#0984e3","#6c5ce7","#a29bfe","#fd79a8","#fdcb6e"],pendingGraphql:["#ffc107","#ff8c00","#ff9800","#ffa726","#ffb74d","#ffcc02","#f39c12","#e67e22","#d35400","#ff6f00"],tti:["#8e44ad","#9b59b6","#e91e63","#f06292","#ba68c8","#ab47bc","#7b1fa2","#6a1b9a","#4527a0","#673ab7"]};class v{constructor(e=!0){n(this,"container",null);n(this,"legend",null);n(this,"glowLayers",[]);n(this,"currentBorders",{layoutShift:null,longTask:null,pageStable:null,cacheNetworkClean:null,cacheNetworkDirty:null,loaderComplete:null,pendingGraphql:null,tti:null});n(this,"colorIndexes",{layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0});n(this,"enabled",!1);n(this,"totalCounts",{layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0});n(this,"lastEventTiming",{layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0});n(this,"navigationStartTime",0);n(this,"ttiTime",0);n(this,"stopVisualizingAfterTTI",!1);n(this,"finalPageStableTime",0);n(this,"loaderCompletionTime",0);n(this,"pendingGraphqlCount",0);this.enabled=e,this.navigationStartTime=performance.now(),this.stopVisualizingAfterTTI=!0,this.updateLegend()}enable(){this.enabled&&(this.ttiTime=0,this.stopVisualizingAfterTTI=!1,this.loaderCompletionTime=0,this.resetCounts(),this.container||this.createDebugContainer())}disable(){this.container&&(this.container.remove(),this.container=null,this.legend=null,this.glowLayers=[])}updateLoaderCompletionTime(e){this.loaderCompletionTime=e,this.enabled&&e>0&&this.addLoaderCompleteBorder(e)}addLoaderCompleteBorder(e){this.enabled&&(this.totalCounts.loaderComplete=1,this.lastEventTiming.loaderComplete=e,this.addGlowLayer("loaderComplete",80,e))}addLayoutShift(e){if(!this.enabled)return;const t=e.startTime-this.navigationStartTime;if(t<0||t>3e4||this.ttiTime>0&&t>this.ttiTime)return;const i=this.loaderCompletionTime===0||t>this.loaderCompletionTime;this.totalCounts.layoutShift++,this.lastEventTiming.layoutShift=t;const a=i?e.value*100:e.value*50;this.addGlowLayer("layoutShift",a,t)}addLongTask(e){if(!this.enabled)return;const t=e.startTime-this.navigationStartTime;t<0||t>3e4||this.ttiTime>0&&t>this.ttiTime||(this.totalCounts.longTask++,this.lastEventTiming.longTask=t,this.addGlowLayer("longTask",Math.min(e.duration/10,100),t))}updatePageStable(e){if(!this.enabled)return;const t=e.pageStableAt>0?e.pageStableAt-this.navigationStartTime:0;if(e.lastLayoutShift&&!this.stopVisualizingAfterTTI){const a=e.lastLayoutShift.startTime-this.navigationStartTime;a>this.lastEventTiming.layoutShift&&(this.lastEventTiming.layoutShift=a)}else e.lastLayoutShift&&this.stopVisualizingAfterTTI;this.totalCounts.pageStable++,this.lastEventTiming.pageStable=t;const i=Math.min(Math.max(e.pageStableAt/50,10),100);this.addGlowLayer("pageStable",i,t)}updateTTI(e){this.ttiTime=e,this.stopVisualizingAfterTTI=!0,this.updateLegend()}updateNavigationStartTime(e){this.navigationStartTime=e,this.stopVisualizingAfterTTI=!1,this.ttiTime=0,this.finalPageStableTime=0,this.currentBorders={layoutShift:null,longTask:null,pageStable:null,cacheNetworkClean:null,cacheNetworkDirty:null,loaderComplete:null,pendingGraphql:null,tti:null},this.container&&this.container.querySelectorAll(".debug-border").forEach(i=>i.remove()),this.updateLegend()}updateFinalPageStable(e){this.finalPageStableTime=e,this.updateLegend()}addCacheNetworkQuery(e,t){if(!this.enabled||this.ttiTime>0&&t>this.ttiTime)return;const i=e?"cacheNetworkDirty":"cacheNetworkClean";this.totalCounts[i]++,this.lastEventTiming[i]=t,this.addGlowLayer(i,50,t)}addPendingGraphqlQuery(){this.enabled&&(this.pendingGraphqlCount++,this.totalCounts.pendingGraphql=this.pendingGraphqlCount,this.lastEventTiming.pendingGraphql=performance.now()-this.navigationStartTime,this.updateLegend())}completePendingGraphqlQuery(){this.enabled&&this.pendingGraphqlCount>0&&(this.pendingGraphqlCount--,this.totalCounts.pendingGraphql=this.pendingGraphqlCount,this.lastEventTiming.pendingGraphql=performance.now()-this.navigationStartTime,this.updateLegend())}resetPendingGraphqlQueries(){this.enabled&&(this.pendingGraphqlCount=0,this.totalCounts.pendingGraphql=0,this.lastEventTiming.pendingGraphql=0,this.updateLegend())}resetCounts(){this.totalCounts={layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0},this.lastEventTiming={layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0},this.ttiTime=0,this.stopVisualizingAfterTTI=!1,this.finalPageStableTime=0,this.pendingGraphqlCount=0,this.currentBorders={layoutShift:null,longTask:null,pageStable:null,cacheNetworkClean:null,cacheNetworkDirty:null,loaderComplete:null,pendingGraphql:null,tti:null},this.container&&this.container.querySelectorAll(".debug-border").forEach(t=>t.remove()),this.updateLegend()}createDebugContainer(){this.container=document.createElement("div"),this.container.style.cssText=`
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 999999;
+      border-radius: 0;
+    `,this.legend=document.createElement("div"),this.legend.style.cssText=`
+      position: absolute;
+      bottom: 35px;
+      left: 35px;
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 6px 8px;
+      border-radius: 4px;
+      font-family: monospace;
+      font-size: 10px;
+      width: 180px;
+      min-height: 140px;
+      pointer-events: auto;
+      overflow: hidden;
+      z-index: 1000000;
+    `,this.container.appendChild(this.legend),document.body.appendChild(this.container),this.updateLegend()}addGlowLayer(e,t,i){if(!this.container)return;const a=T[e],c=a[this.colorIndexes[e]];this.colorIndexes[e]=(this.colorIndexes[e]+1)%a.length;const l={type:e,color:c,timestamp:Date.now(),intensity:Math.max(10,Math.min(t,100)),timeSinceNavigation:i};this.currentBorders[e]=l,this.glowLayers.push(l),this.updateBorders(),this.updateLegend()}updateBorders(){if(!this.container)return;this.container.querySelectorAll(".debug-border, .debug-label").forEach(o=>o.remove());const t=this.currentBorders.layoutShift,i=this.currentBorders.longTask,a=this.currentBorders.pageStable,c=this.currentBorders.cacheNetworkClean,l=this.currentBorders.cacheNetworkDirty,g=this.currentBorders.loaderComplete,f=this.ttiTime>0?{type:"tti",color:"#8e44ad",timestamp:Date.now(),intensity:100,timeSinceNavigation:this.ttiTime}:null,d=6,s=36,b={"loader-complete":"Loader Complete","layout-shift":"Layout Shifts","long-task":"Long Tasks","cache-network-clean":"Clean GraphQL","cache-network-dirty":"Dirty GraphQL",tti:"TTI","page-stable":"Page Stable"};[{layer:g,offset:0,name:"loader-complete"},{layer:t,offset:s,name:"layout-shift"},{layer:i,offset:s*2,name:"long-task"},{layer:c,offset:s*3,name:"cache-network-clean"},{layer:l,offset:s*4,name:"cache-network-dirty"},{layer:f,offset:s*5,name:"tti"},{layer:a,offset:s*6,name:"page-stable"}].filter(({layer:o})=>o).forEach(({layer:o,offset:r,name:p})=>{if(!o||!this.container)return;const m=document.createElement("div");m.className=`debug-border debug-border-${p}`,m.style.cssText=`
+        position: fixed;
+        top: ${r}px;
+        left: ${r}px;
+        right: ${r}px;
+        bottom: ${r}px;
+        border: ${d}px solid ${o.color}80;
+        pointer-events: none;
+        z-index: ${999999-r};
+        border-radius: 0;
+      `;const u=document.createElement("div");u.className=`debug-label debug-label-${p}`;const x=Math.round(o.timeSinceNavigation);u.style.cssText=`
+        position: fixed;
+        top: ${r+4}px;
+        left: ${r+12}px;
+        background: ${o.color}cc;
+        color: white;
+        padding: 3px 7px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 10px;
+        font-weight: bold;
+        pointer-events: none;
+        z-index: ${999999-r+1};
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+        white-space: nowrap;
+        backdrop-filter: blur(2px);
+      `;const S=b[p]||p;u.textContent=`${S} (${x}ms)`,this.container.appendChild(m),this.container.appendChild(u)})}resetVisualization(){this.glowLayers=[],this.currentBorders={layoutShift:null,longTask:null,pageStable:null,cacheNetworkClean:null,cacheNetworkDirty:null,loaderComplete:null,pendingGraphql:null,tti:null},this.totalCounts={layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0},this.lastEventTiming={layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0},this.colorIndexes={layoutShift:0,longTask:0,pageStable:0,cacheNetworkClean:0,cacheNetworkDirty:0,loaderComplete:0,pendingGraphql:0,tti:0},this.ttiTime=0,this.finalPageStableTime=0,this.container&&this.container.querySelectorAll(".debug-border, .debug-label").forEach(t=>t.remove()),this.updateLegend()}updateLegend(){if(!this.legend)return;const e={layoutShift:"Shifts",longTask:"Tasks",pageStable:"Stable",cacheNetworkClean:"CleanQL",cacheNetworkDirty:"DirtyQL",loaderComplete:"Loader",pendingGraphql:"Pending",tti:"TTI"},t=Object.entries(this.totalCounts).map(([g,f])=>{const d=g,s=this.colorIndexes[d],b=s===0?T[d].length-1:s-1,y=T[d][b]||"#666",o=e[d],r=Math.round(this.lastEventTiming[d]);return`<div style="display: flex; align-items: center; margin: 1px 0; font-size: 11px;">
+        <div style="width: 10px; height: 10px; background: ${y}; margin-right: 4px; border-radius: 1px;"></div>
+        <span>${o}: ${f} (${r}ms)</span>
+      </div>`}).join(""),i=Object.values(this.currentBorders).filter(Boolean).length,a=this.ttiTime>0?`<div style="margin: 2px 0; padding: 2px; background: rgba(46, 213, 115, 0.3); border-radius: 2px; font-size: 10px; border: 1px solid #2ed573;">
+          <strong style="color: #2ed573;">TTI: ${Math.round(this.ttiTime)}ms ✓</strong>
+        </div>`:`<div style="margin: 2px 0; padding: 2px; background: rgba(128, 128, 128, 0.2); border-radius: 2px; font-size: 10px; border: 1px solid #666;">
+          <span style="color: #999;">TTI: 0ms</span>
+        </div>`,c=this.finalPageStableTime>0?`<div style="margin: 2px 0; padding: 2px; background: rgba(128, 0, 128, 0.3); border-radius: 2px; font-size: 10px; border: 1px solid #800080;">
+          <strong style="color: #800080;">Page Stable: ${Math.round(this.finalPageStableTime)}ms ✓</strong>
+        </div>`:`<div style="margin: 2px 0; padding: 2px; background: rgba(128, 128, 128, 0.2); border-radius: 2px; font-size: 10px; border: 1px solid #666;">
+          <span style="color: #999;">Page Stable: 0ms</span>
+        </div>`;this.legend.innerHTML=`
+      <div style="font-weight: bold; margin-bottom: 2px; font-size: 11px;">Perf Debug (${i}/6)</div>
+      ${t}
+      <div style="margin: 2px 0; font-size: 9px; opacity: 0.7; line-height: 1.1;">
+        Out→In: Shifts→Stable→Tasks→CleanQL→DirtyQL→Loader
+      </div>
+      ${a}
+      ${c}
+      <button
+        id="perf-debug-reset-button"
+        style="margin-top: 4px; padding: 2px 6px; background: #ff4757; color: white; border: none; border-radius: 2px; font-size: 10px; cursor: pointer; font-family: monospace; width: 100%;"
+      >
+        🔄 Reset
+      </button>
+    `,window.performanceDebugReset=()=>this.resetVisualization();const l=document.getElementById("perf-debug-reset-button");l&&(l.addEventListener("click",()=>{window.performanceDebugReset&&window.performanceDebugReset()}),l.addEventListener("mouseover",function(){this.style.background="#ff3838"}),l.addEventListener("mouseout",function(){this.style.background="#ff4757"}))}}export{v as PerformanceDebugVisualizer};

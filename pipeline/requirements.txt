@@ -1,0 +1,22 @@
+# Core dependencies for the lightweight Not.js pipeline
+esprima
+numpy==1.25.2
+pandas
+scikit-learn==1.3.0
+adblockparser
+openpyxl
+pyvirtualdisplay
+selenium
+seaborn
+tldextract
+webdriver-manager
+matplotlib
+xlrd
+beautifulsoup4
+httpx
+joblib
+graphviz
+networkx
+pygraphviz
+gdown
+

@@ -1,0 +1,2 @@
+import"./react-16zIsxtG.js";import{t as e}from"./jsx-runtime-C8TH6vEV.js";var t=e();function n(e){return(0,t.jsx)(`svg`,{fill:`none`,viewBox:`0 0 20 20`,"aria-hidden":`true`,...e,children:(0,t.jsx)(`path`,{stroke:`currentColor`,strokeLinecap:`round`,strokeLinejoin:`round`,d:`m6 10.5 3 3 6-6`})})}export{n as default};
+//# sourceMappingURL=Check-6xK3bsQr.js.map

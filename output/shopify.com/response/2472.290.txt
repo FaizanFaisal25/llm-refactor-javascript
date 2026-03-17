@@ -1,0 +1,1 @@
+import{cd as n,ae as u,eM as c}from"./loaders-shared-6a160361d22e.js";function p(t,o=n,s=n,e=0,a=0){const[m,r]=u.useState("loading");return u.useEffect(()=>{(async()=>{r(await c(t,o,s,e,a))})()},[t,o,s,e,a]),m}function i({scriptAttributes:t,onComplete:o,onRetry:s,retries:e=0,retryDelay:a=0}){return p(t,o,s,e,a),null}export{i as I,p as u};

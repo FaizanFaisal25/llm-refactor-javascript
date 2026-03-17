@@ -1,0 +1,5 @@
+.b23039a37d{width:100%}
+.a541590055{display:none!important}
+.e88ee01e1f{border-radius:var(--bui_border_radius_200);overflow:hidden}
+
+/*# sourceMappingURL=https://istatic.booking.com/internal-static/capla/static/css/18cad957.dbb1072a.chunk.css.map*/

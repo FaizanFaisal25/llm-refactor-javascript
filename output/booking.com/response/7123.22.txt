@@ -1,0 +1,3 @@
+.f23e65fd58{font-weight:700}.a245646e46{font-weight:700;color:var(--bui_color_foreground)}.bc7a8e3482{font-weight:600;color:var(--bui_color_foreground)}.b15792eb8f{color:var(--bui_color_constructive_foreground)}.de887d9ebf{color:var(--bui_color_constructive_foreground)}
+
+/*# sourceMappingURL=https://istatic.booking.com/internal-static/capla/static/css/09fb2abd.80c171a1.chunk.css.map*/

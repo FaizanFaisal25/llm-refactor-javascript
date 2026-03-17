@@ -1,0 +1,1 @@
+._LoadingSpinner_30ad5_1{display:inline-flex;align-items:center;justify-content:center}@keyframes _spin-animation_30ad5_1{0%{transform:rotate(0)}to{transform:rotate(360deg)}}._LoadingSpinner_30ad5_1 svg{animation:_spin-animation_30ad5_1 var(--p-motion-duration-500) linear infinite}

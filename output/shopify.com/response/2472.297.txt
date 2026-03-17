@@ -1,0 +1,1 @@
+import{N as r,j as s,B as a}from"./render-shared-cb658c96003c.js";import{u as i}from"./useLinkNavigationProps-5ccac466ba30.js";function e(t){var o=r(1);try{const n=i(t);return s.jsx(a,{...n})}finally{o.f()}}export{e as B};

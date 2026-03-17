@@ -1,0 +1,2 @@
+import{o as e,r as t}from"./PricingData-DfEm_-bJ.js";function n(n=!1){let{site:r}=e(),{pricingSite:i}=t(),a=n&&i?i:r,o=a.languageCode||a.locale?.split(`-`)[0]||`en`;return o.endsWith(a.countryCode)?o:`${o}-${a.countryCode}`}export{n as t};
+//# sourceMappingURL=useIntlLocale-2lzVK1xX.js.map

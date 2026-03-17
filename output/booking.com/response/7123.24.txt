@@ -1,0 +1,4 @@
+.b88f649033{width:100%}
+.c4b02e9bdd{margin:0}.b58069a581{font-size:14px}.aee2fac107{margin-top:var(--bui_spacing_2x);padding:var(--bui_spacing_4x);padding-top:0;width:100%;box-sizing:border-box}.f6cb2cf9de{font-weight:700}
+
+/*# sourceMappingURL=https://istatic.booking.com/internal-static/capla/static/css/0fdff3cd.2d5a1a4b.chunk.css.map*/

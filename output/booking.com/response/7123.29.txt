@@ -1,0 +1,5 @@
+.c6e55be300{cursor:pointer}.c6e55be300 a,.c6e55be300 a:link{color:inherit;text-decoration:none}
+.a42180b064{--bui_stack_gap_last_child:0px;margin-top:var(--bui_spacing_2x);padding-top:var(--bui_spacing_4x)}@media (min-width:1024px){.a42180b064{margin-top:var(--bui_spacing_4x)}}.d98b13273d{display:none}
+.b04cfda1aa{margin-block-end:var(--bui_spacing_4x);padding:var(--bui_spacing_4x);background-color:var(--bui_color_background_base);border-block:var(--bui_border_width_100) solid var(--bui_color_border_alt)}
+
+/*# sourceMappingURL=https://istatic.booking.com/internal-static/capla/static/css/31e40d2f.1e84e7a6.chunk.css.map*/

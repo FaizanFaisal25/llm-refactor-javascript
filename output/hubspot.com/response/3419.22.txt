@@ -1,0 +1,1 @@
+.csol-image.-rounded-corners{border-radius:var(--cl-border-radius-container-medium)}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>405 - Method Not Allowed</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="https://q.bstatic.com/libs/bui/7.3.1/bui.min.css">
+<link rel="stylesheet" href="https://q.bstatic.com/libs/calango/0.500/bui.css">
+</head>
+<body class="c-body">
+<header id="c-header" class="header">
+<div class="c-header__main">
+    <div class="bui-container bui-container--center">
+        <div class="bui-grid c-header--top">
+            <div class="bui-grid__column-3">
+                <a class="c-logo__wrap" href="/">
+                    <span class="c-logo__type">
+                        Bookings_Web_Accounts_Portal
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+<div class="bui-container bui-container--center c-main-body c-main-body--center">
+<section class="bui-panel c-content__panel c-main-content">
+    <h1 class="bui-f-font-display_one">405 - Method Not Allowed</h1>
+
+<p>You can use one of these HTTP methods:</p>
+<ul>
+<li>POST</li>
+<li>OPTIONS</li>
+</ul>
+
+
+</section>
+</div>
+<div class="bui-container bui-container--center">
+    <footer class="c-u-flex">
+        <div class="cfooter c-max-width bui-container">
+            <div class="c-u-flex--nowrap bui-grid">
+                <div class="c-u-flex c-u-flex--justify--flex-end bui-grid__column-full">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+

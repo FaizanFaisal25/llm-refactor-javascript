@@ -1,0 +1,1 @@
+.breeze-agents-tabbed-testimonials__author-name,.breeze-agents-tabbed-testimonials__author-name.-microheading,.breeze-agents-tabbed-testimonials__author-title,.breeze-agents-tabbed-testimonials__quote{margin:0}

@@ -1,0 +1,2 @@
+import{t as e}from"./jsx-runtime-C8TH6vEV.js";var t=e();function n(e){return(0,t.jsx)(`svg`,{fill:`none`,viewBox:`0 0 20 20`,"aria-hidden":`true`,...e,children:(0,t.jsx)(`path`,{stroke:`currentColor`,strokeLinecap:`round`,d:`m4.34 4.34 11.32 11.32M15.66 4.34 4.34 15.66`})})}export{n as t};
+//# sourceMappingURL=Close-WxaFQum-.js.map

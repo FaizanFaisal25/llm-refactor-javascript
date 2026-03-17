@@ -59,6 +59,15 @@ The per-site `surrogate2` outputs shown in the notebook were written for:
 - `server/`: local Express server used by the crawler/instrumentation setup.
 - `output/`: collected website artifacts, downloaded JS responses, features, and generated surrogate outputs.
 - `generateSurrogateForChrome2.py`: converts `surrogate2` outputs into a Chrome-friendly directory layout.
+- `refactor_exploration/`: exploratory refactor-analysis workspace with comparison scripts, tests, and generated reports.
+
+## Refactor Exploration Workspace
+
+The `refactor_exploration/` directory contains exploratory artifacts used to evaluate and validate refactoring behavior outside the main notebook demo flow.
+
+- `refactor_exploration/refactor/`: refactor comparison scripts/spec/tests and generated comparison reports.
+- `refactor_exploration/tests/`: generated and exploratory test fixtures.
+- `refactor_exploration/conversations/`: saved LLM conversation logs from exploration runs.
 
 ## Setup
 

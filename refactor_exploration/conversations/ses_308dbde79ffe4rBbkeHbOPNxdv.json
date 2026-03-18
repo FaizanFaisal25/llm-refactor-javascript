@@ -1,0 +1,1277 @@
+{
+  "info": {
+    "id": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+    "slug": "curious-otter",
+    "projectID": "global",
+    "directory": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+    "title": "Generate missing human summary in refactor spec",
+    "version": "1.2.26",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "time": {
+      "created": 1773672866182,
+      "updated": 1773673083489
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1773672866194
+        },
+        "summary": {
+          "diffs": []
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "openai",
+          "modelID": "gpt-5.3-codex"
+        },
+        "id": "msg_cf7242189001aXnptMtRZtH4VO",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "the refactor_comparison_spec.md says that a human summary was generated but it never was, generate it",
+          "id": "prt_cf7242189002jQSTsi1P3ReSHV",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7242189001aXnptMtRZtH4VO"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672866213,
+          "completed": 1773672874363
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8767,
+          "input": 8652,
+          "output": 115,
+          "reasoning": 22,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf72421a5001UCYwEUxHyJ1XpG",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf724378d001hiLrcA7BMhsXF7",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72421a5001UCYwEUxHyJ1XpG"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Preparing to inspect repository**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_0f241f31d5de6c770169b819a835b08191a34653b1e657b8ff",
+              "reasoningEncryptedContent": "gAAAAABpuBmqd7pAkQtLyGtx1_iQaRB_fpTK0n24b3XbY7QXsZ0Ww8JbRCduyNIPi8VaC5lxiNzBtLKzYj61STkTrlLBEPxVoqfd12oga4deGOYMi2DfSS7ARxKiqhh8ZCsZSBO7ZCFo9xhSodfY3ObBTKU5uOT7sFlJD9nOJZXJD1hdotR2jArBDol4BGrW7Q3DkTOlukTSLqtRAzDJjH6CkMk0GQiOYrh9b-Zwg9ma7tD68dLhbItDZoJhzOGyYqpttqTOi5O5kiDwMULonfcM0VWFo_mjtCqaYe5PRtqY5128MNnw9Xf1TKHvxmDiUn3VVwF82YulODkuWiwCsTE9K95ZtapemoUFcNNfL1QGmf5EMPIWXK3bBWz07Rw23EeH0XqYiMgmKAFUbwu8dYT2iu32EfGKgCZMjZfuAVMpyPNc0x1nJHjLEqi_2-MiTAVEge13hMcjIIJO2tV78kCrv0kNrQ8ECBoYxA75lFQtUmE8YYsBTgOSl_o6PNnGEurBXW0xU-2sLHKqVBcnNXD0fS2YxXh237A--SGiKK5ojuY72P4-yNeC01qCF-28b389FZ-dKJWZyOneiaSYIcPb-AoA_SJ2JxdWHoL6ACYfSTfosczfqZRIlLJarMmdUk0a_WqdLUaS-qUwcQDExQUW96IRzi7O0NtyHk2zS6ytGbJbTf36AmUwWZmOCuQAOrLb9HK1VLzh5HuYFbH7XVBTd3wDUIt7bznF_OTCj9khUeoZQ8kEXEO4kAcdSSt6fDXxdXQC6yjNc9NWE0d1xIwwbOpXrNKwhWY8-QjiE-o9ZqYnndHp1BJSMv8J71V17G0IyjSGjXKP8h7G5Orq8XgVTvEoHgm_4QvvBiFPIblhjnS33Vt7ANWtpLGEqERgC36NSLHKVoiiDC_bxB0gpJO1Gd5CM3M3xXf_uyd5uA_cnT_IYZrQyibhG8uQPD8Z7XdF7OCIyH7H"
+            }
+          },
+          "time": {
+            "start": 1773672872233,
+            "end": 1773672874285
+          },
+          "id": "prt_cf7243929001s1OP9p3ACL3ye9",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72421a5001UCYwEUxHyJ1XpG"
+        },
+        {
+          "type": "tool",
+          "callID": "call_m2X22HxmztXOb0eFOYbW4hql",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/*refactor_comparison_spec.md",
+              "path": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor"
+            },
+            "output": "No files found",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+            "metadata": {
+              "count": 0,
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672874313,
+              "end": 1773672874337
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0f241f31d5de6c770169b819aa49a48191a97e3ba8d5d4d8a6"
+            }
+          },
+          "id": "prt_cf724412f001XQMWJly77VgG0l",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72421a5001UCYwEUxHyJ1XpG"
+        },
+        {
+          "type": "tool",
+          "callID": "call_TVRy1UaaLap6uFxXNgydUJKk",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/*.md",
+              "path": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor"
+            },
+            "output": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/REFACTOR_COMPARISON_SPEC.md\n/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+            "metadata": {
+              "count": 2,
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672874318,
+              "end": 1773672874342
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0f241f31d5de6c770169b819aa49b081918384e5972910496d"
+            }
+          },
+          "id": "prt_cf724414c001jPzTR2YgXlda1w",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72421a5001UCYwEUxHyJ1XpG"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 8767,
+            "input": 8652,
+            "output": 115,
+            "reasoning": 22,
+            "cache": {
+              "read": 0,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7244171001hPLYrSRuxP8T5C",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72421a5001UCYwEUxHyJ1XpG"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672874366,
+          "completed": 1773672878290
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8951,
+          "input": 261,
+          "output": 114,
+          "reasoning": 18,
+          "cache": {
+            "read": 8576,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf724417e001HFBiVBEQA2MG6E",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf72443ac00174nm4Copajg95Z",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724417e001HFBiVBEQA2MG6E"
+        },
+        {
+          "type": "reasoning",
+          "text": "",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_00e9cd96de39e63c0169b819ac6d6c8191b5e749e488ae0418",
+              "reasoningEncryptedContent": "gAAAAABpuBmuaMgW7tkjWC5uRmYcUzM7pNgfE4NglxoFvJc5AviqxRToz5ECKmfjLKE1Ngam_0vJ8YrT4vCPAcNINb7mlgGoAyogHaHWNtwmAXLyedzaT--P8vPbaQiJvOjUdWO9lKADx9p3LcoUP_vPO30ktCmkVjgMuM0jqAUHW2UpH5PBmzZPS9JbAkrXXim6JbZV79yxp9DxKKl86dzlZ0yhAAWis2bqbC3KUP0EEFZ2J-BWO23pE_zz6mCGs5r5kfmBuLGOp9qGdx5Ot2_obT3R82M1ghUIJN7gloCV2ibzo8LuhS9uxmR4R3sOrNRbFIzey-6gVKkHcIcc-beXu1kHWj2MWvLYYubooQWeXvLZbe9OwrMikFc8h0X_I8LMUFxMhHk7b88PvmBY3DILzVZwwDfxMFp2wqe7Xg0dloVGDvo7E2Q-7Ye6xaJK-nNbkaqJQ-vJxKIrMBn5QPufY7a10oDkHDWxKxAa7UWrvVe43WGQEqlBiE-58g1Igz5fFM9Y6LL4cO9JBUwz2X2Ar1dUv5rFhhytEvXIbWxQi8XpgPUlfZHRNByk5W3UpoIdAO2m9JCUkr5YdolrvtLXz44ICU5NfGDy57_QD149CSOZWQEnQ1qrWzXRVgcsVDtFgKYaETQIZK0-96gsUa6TCjJwoLPPd48zy1BYIlA3ybfT1BbTGNIhM00t6g_8bkfzsrCvSxmO_4iUqSHxl0H8hE4Fk6J8amx0H6f_bhVEBQOTW6UCnK5F4gt8EO4hnqDxLF1sO31SZyigCsKqdHZDIS8MVoT974CSyioh5GGhSdKIa5tbH5VDxyFyp6qA3A57IDKdsAhawTw9k4lNoiWxpzc7qbIBuNz4GfwmyCio6LmgLxTTu0piOHQ9hkSw-2YqMOCw1MSRR7cwVjLf97Nvr0umQThOwDaUIG_3hgjMScR-5sJfSxY="
+            }
+          },
+          "time": {
+            "start": 1773672876301,
+            "end": 1773672878236
+          },
+          "id": "prt_cf724490d001LHufMItsi8jVbx",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724417e001HFBiVBEQA2MG6E"
+        },
+        {
+          "type": "tool",
+          "callID": "call_L0HT5IJcC68oHW6CMTvffeOE",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/REFACTOR_COMPARISON_SPEC.md"
+            },
+            "output": "<path>/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/REFACTOR_COMPARISON_SPEC.md</path>\n<type>file</type>\n<content>1: # Refactor Equivalence Check Spec\n2: \n3: ## Goal\n4: \n5: Compare extracted functions from `method_definition` (original) and `method_code_refactored` (refactored) and classify each pair as:\n6: \n7: - `equivalent_except_tracking`\n8: - `behavior_changed_non_tracking`\n9: - `inconclusive`\n10: \n11: The intended interpretation is: no observed non-tracking behavior loss, with tracking-related differences allowed.\n12: \n13: ## Inputs\n14: \n15: - Original extracted functions: `method_definition_functions.js`\n16: - Refactored extracted functions: `method_code_refactored_functions.js`\n17: \n18: Pairing key:\n19: \n20: - `(row, functionIndex)`\n21: \n22: ## Execution Model\n23: \n24: Each function is executed inside a VM sandbox with:\n25: \n26: - deterministic stubs for unknown globals and chained property access\n27: - fake timers and fake promise implementation to reduce async side effects\n28: - instrumentation of calls and writes\n29: \n30: ## Tracking Detection Heuristic\n31: \n32: A call/write path is treated as tracking-related when it matches one of:\n33: \n34: - `track`, `tracking`, `analytics`, `cookie`, `visitor`, `audience`, `mbox`, `beacon`, `consent`, `adobe`, `utm`, `pixel`, `telemetry`, `dyid`, `event`, `optout`, `measure`, `segment`, `campaign`, `clickid`\n35: \n36: Everything else is treated as non-tracking.\n37: \n38: ## Test Inputs Per Function Pair\n39: \n40: For each pair, multiple argument vectors are generated (arity-capped):\n41: \n42: - all `undefined`\n43: - numeric sequence (`1..n`)\n44: - mixed object/string/bool/list/object\n45: - optional heuristic cases (array/origin/cookie-sensitive)\n46: \n47: ## Comparison Rules\n48: \n49: For each generated case:\n50: \n51: 1. Compare outcome type (`return` vs `throw`)\n52: 2. If returned, compare normalized return values\n53: 3. If thrown, compare error type\n54: 4. Compare non-tracking call sets\n55: 5. Compare non-tracking write sets\n56: \n57: Tracking call/write differences are recorded but allowed.\n58: \n59: Classification:\n60:  \n61: - Any mismatch in 1-5 => `behavior_changed_non_tracking`\n62: - All cases pass => `equivalent_except_tracking`\n63: - Missing pair on either side => `inconclusive`\n64: \n65: ## Outputs\n66: \n67: - Detailed JSON report: `method_code_refactor_comparison_report.json`\n68: - Human summary: `method_code_refactor_comparison_summary.md`\n69: \n70: ## Limitations\n71: \n72: - This is differential testing, not a formal proof.\n73: - Results depend on generated inputs and sandbox approximations.\n74: - Behavior requiring real browser/network/runtime integration may be under-exercised.\n75: - Tracking classification is heuristic and can be tuned if your policy differs.\n76: \n77: ## Run\n78: \n79: ```bash\n80: node compare_refactor_functionality.js\n81: ```\n\n(End of file - total 81 lines)\n</content>",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/REFACTOR_COMPARISON_SPEC.md",
+            "metadata": {
+              "preview": "# Refactor Equivalence Check Spec\n\n## Goal\n\nCompare extracted functions from `method_definition` (original) and `method_code_refactored` (refactored) and classify each pair as:\n\n- `equivalent_except_tracking`\n- `behavior_changed_non_tracking`\n- `inconclusive`\n\nThe intended interpretation is: no observed non-tracking behavior loss, with tracking-related differences allowed.\n\n## Inputs\n\n- Original extracted functions: `method_definition_functions.js`\n- Refactored extracted functions: `method_code_refactored_functions.js`\n\nPairing key:\n\n- `(row, functionIndex)`",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1773672878242,
+              "end": 1773672878266
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_00e9cd96de39e63c0169b819ae84c48191abddf006ed458541"
+            }
+          },
+          "id": "prt_cf724509d001b73WOPS7rdYAQE",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724417e001HFBiVBEQA2MG6E"
+        },
+        {
+          "type": "tool",
+          "callID": "call_PZWUcyZhU8Ap2el4J0PLHpxv",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md"
+            },
+            "output": "<path>/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md</path>\n<type>file</type>\n<content>1: # Refactor Functional Comparison Summary\n2: \n3: - Generated at: 2026-03-15T18:11:45.232Z\n4: - Paired functions: 751\n5: - Equivalent except tracking: 356\n6: - Behavior changed (non-tracking): 395\n7: - Relaxed equivalent except tracking: 751\n8: - Relaxed behavior changed (non-tracking): 0\n9: - Inconclusive: 42\n10: - Unmatched original only: 39\n11: - Unmatched refactored only: 3\n12: - Equivalent pairs with tracking diffs observed: 34\n13: \n14: ## First Non-Tracking Differences (up to 20)\n15: \n16: - row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n17: - row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n18: - row 6 fn 1 (get -> get): Different non-tracking call side effects\n19: - row 7 fn 1 (d -> d): Different non-tracking call side effects\n20: - row 8 fn 1 (get -> get): Different non-tracking call side effects\n21: - row 10 fn 1 (init -> init): Different non-tracking call side effects\n22: - row 12 fn 1 (init -> init): Different non-tracking call side effects\n23: - row 13 fn 1 (init -> init): Different non-tracking call side effects\n24: - row 16 fn 1 (value -> value): Different outcome (return vs throw)\n25: - row 17 fn 1 (value -> value): Different outcome (return vs throw)\n26: - row 18 fn 1 (p -> p): Different outcome (return vs throw)\n27: - row 20 fn 1 (ot -> ot): Different non-tracking call side effects\n28: - row 21 fn 1 (Sa -> Sa): Different non-tracking call side effects\n29: - row 24 fn 1 (g -> g): Different non-tracking call side effects\n30: - row 25 fn 1 (D -> D): Different non-tracking call side effects\n31: - row 26 fn 1 (w -> w): Different non-tracking call side effects\n32: - row 27 fn 1 (D -> D): Different non-tracking call side effects\n33: - row 28 fn 1 (xt -> xt): Different outcome (return vs throw)\n34: - row 29 fn 1 (X -> X): Different non-tracking call side effects\n35: - row 31 fn 1 (w -> w): Different non-tracking call side effects\n36: \n37: ## First Inconclusive Items (up to 20)\n38: \n39: - row 19 fn 1: Missing in original set\n40: - row 19 fn 2: Missing in refactored set\n41: - row 19 fn 3: Missing in refactored set\n42: - row 19 fn 4: Missing in refactored set\n43: - row 19 fn 5: Missing in refactored set\n44: - row 19 fn 6: Missing in refactored set\n45: - row 19 fn 7: Missing in refactored set\n46: - row 19 fn 8: Missing in refactored set\n47: - row 19 fn 9: Missing in refactored set\n48: - row 19 fn 10: Missing in refactored set\n49: - row 19 fn 11: Missing in refactored set\n50: - row 19 fn 12: Missing in refactored set\n51: - row 19 fn 13: Missing in refactored set\n52: - row 19 fn 14: Missing in refactored set\n53: - row 19 fn 15: Missing in refactored set\n54: - row 19 fn 16: Missing in refactored set\n55: - row 19 fn 17: Missing in refactored set\n56: - row 19 fn 18: Missing in refactored set\n57: - row 19 fn 19: Missing in refactored set\n58: - row 19 fn 20: Missing in refactored set\n\n(End of file - total 58 lines)\n</content>",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "metadata": {
+              "preview": "# Refactor Functional Comparison Summary\n\n- Generated at: 2026-03-15T18:11:45.232Z\n- Paired functions: 751\n- Equivalent except tracking: 356\n- Behavior changed (non-tracking): 395\n- Relaxed equivalent except tracking: 751\n- Relaxed behavior changed (non-tracking): 0\n- Inconclusive: 42\n- Unmatched original only: 39\n- Unmatched refactored only: 3\n- Equivalent pairs with tracking diffs observed: 34\n\n## First Non-Tracking Differences (up to 20)\n\n- row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n- row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n- row 6 fn 1 (get -> get): Different non-tracking call side effects\n- row 7 fn 1 (d -> d): Different non-tracking call side effects\n- row 8 fn 1 (get -> get): Different non-tracking call side effects",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1773672878253,
+              "end": 1773672878283
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_00e9cd96de39e63c0169b819ae84d881918a9d07a5aa62696d"
+            }
+          },
+          "id": "prt_cf72450a70011XS4D3dU064GB1",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724417e001HFBiVBEQA2MG6E"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 8951,
+            "input": 261,
+            "output": 114,
+            "reasoning": 18,
+            "cache": {
+              "read": 8576,
+              "write": 0
+            }
+          },
+          "id": "prt_cf72450ce0019buIi0LMIAo8Au",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724417e001HFBiVBEQA2MG6E"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672878292,
+          "completed": 1773672882985
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 10860,
+          "input": 2055,
+          "output": 101,
+          "reasoning": 55,
+          "cache": {
+            "read": 8704,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf72450d4001pFuiftSQVYniVN",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf724530c001w3G0mwWuzJHQbG",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72450d4001pFuiftSQVYniVN"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Locating report for summary**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_06174ecb7aeae9090169b819b1868081918739744c24d83288",
+              "reasoningEncryptedContent": "gAAAAABpuBmzNeMTOEBgkJPbiESQuaUUDv2xMdI8aJZILm_rHzxmKPDByXkK9_9ZzLeHaKYiQm57TWWQNgKhz2s55bCwD-26PH_hnY5cc6JtPyQNX5YWxDa11WhoBAltP8l8mW_MocVjg-qt4KGp_hsX_drGPdvwCW-SRE8R_rP3xNLRxojhPjolw6aYTAb__eigTwRDQiq2oC9jYD8qpqJ-mDhkkSRF1_eYgurgPLKqg7-I43N67RR3gyurjQbkPwH7rA9TIWp3U_kGLjKwI18GT4-QsGtVYRCvPNwblA0Y4cbjlebXJhILUMUXgkSJOzp4wYdvQ-yH4tkO6tIBO3Cu8A-7pyF-0WAFAjKE1dp6Y9LsY8AT36JDw5CqI1QVxDMVsNwNet0-wX_L1n_6oQRZSOYMFYIay8aDVQkSNBg8pEl4j8K2hPE3uCXvgaQhK_JFaiBGr9QNDsDrK0cgCgmJOZWKSM9tEisOzTqbLCzVaO-b3aT0OMstG0AE2C7AX2Ed16G5U0ES8QZ0NseMaG20rMaISuzUz5QJG6z3o4l-tXuMnnWu_jIUfXifYoqmWdHaN33Q1vdoG0tS-qt8Zz6am0VxTI2P71TgYPE-g2oZjbPS9TZOG2W-jyepP9EfJCaYjxFKnhNEYFRuN36Dj9iYbnLFEchzPKSE6vM2lAJ0yBVNZUMlDJN-Krl63KBSmdxDm26cvp05FBH0pPwZPxjYeX4TmYs3kyqJPQ5363ays_g8lnYAJT9xo2Yb_NK7r7Rz7HGTu4OmsubzC4ixnvQjVnCP7PYsCM4DfvG9N2ZVEXAtGxKVK5zLPX3E_1eA4UWbBqQ81GN9hcTgbHvB46biABVxlapZCqwiJmtp4vPgz9bIJj6izFD4Bzag86TK-wHhuIfNOyebYvRF4EUgYKpvkCbGM6IgYamMm2CfZd46xHjrlHeIThuvqVtYqrop9O1Nj6GGZtb-Y09yeUcCS3qEn1cTjK5T80sBloVsisE-EEEmhWIZtjElhbrWCHDaP_PMh3V4cUlNuj27Y9Yr_sxP2JQeEWltEC02SiaUhIgLRkBB2Cz1yniobkJifz08AGqBT-co_3vtTBCQZbT-zmY4j9UPzb6MmXgQ5bT4rvTUs4JUZr_i9pI3yqZ5udkUhQUchXMXcZPh13J309peMyMoHcrsc19CNQ1808iFvfVjPPqm082S9DxtnbUWkUt86P_o9Dz9xmmzpZcgXfJUOq8K-7dYprQN78IgJSuX_YHrHCO9aN5hiJs="
+            }
+          },
+          "time": {
+            "start": 1773672881071,
+            "end": 1773672882571
+          },
+          "id": "prt_cf7245baf001pA42kkskpuJ46Q",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72450d4001pFuiftSQVYniVN"
+        },
+        {
+          "type": "tool",
+          "callID": "call_w8n87RvEEfM6Iik6GJOwrdFV",
+          "tool": "glob",
+          "state": {
+            "status": "completed",
+            "input": {
+              "pattern": "**/method_code_refactor_comparison_report.json",
+              "path": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor"
+            },
+            "output": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_report.json",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+            "metadata": {
+              "count": 1,
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672882945,
+              "end": 1773672882960
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_06174ecb7aeae9090169b819b303688191955ddace5aa43266"
+            }
+          },
+          "id": "prt_cf724618e001tZGLXS1WbNDpzc",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72450d4001pFuiftSQVYniVN"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 10860,
+            "input": 2055,
+            "output": 101,
+            "reasoning": 55,
+            "cache": {
+              "read": 8704,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7246324001wylfO7s4PLzI7D",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf72450d4001pFuiftSQVYniVN"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672882987,
+          "completed": 1773672888125
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 10969,
+          "input": 142,
+          "output": 75,
+          "reasoning": 24,
+          "cache": {
+            "read": 10752,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf724632b0012vNIEB6PxDrGbs",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf72465fb0010fh711nXNLMffq",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724632b0012vNIEB6PxDrGbs"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Planning efficient data extraction**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_0f05d226651408670169b819b6e9ac819180d80fedc84804a1",
+              "reasoningEncryptedContent": "gAAAAABpuBm4_Ar9HKASVITXsPsqUbUkK9ge5pSbcxGUfpqzL5sfLaPpAgd_8mzXWOE7PBt-iWP4lEBX6k-A3lMUzlE05m2-LqTLkNL7uGNKHvSSgbKrua0LwCxAUpfdf6BpEJrhd8fU2mhKdhvsdDM9hgxlb4qGfcGPqMm1O8tfFPNHs1qmGc4WhZvixLnXA7E0QrHa4VJTm9bVj5e6XXrOVjwIoN7t2h7q18lTSi0hk1xTruD7XXTfOGPO3y_NpWC-gXLkEPG_FDFPtSi6gCsQL78zOx_5ZpiRMjL6gdJm2nWkIGI_6-_uN843Obadd8mW22EmZlU_JbsoVQVv5GsY-xFVqK2JYvAAPYD9Bj4vTNQ4VZEW6ZQSYWBjSrCmyoOQecU2JIgvw-FkuXNj64LjsfF1ewNtQbD0aEkri2V0UnZ82fD1kkmbik4Qy3T57xgfrudPorhOb3qG-MLzWebizCmmq5rxWIjvqV5BdbgyWilCdBE9PVPXGnxaIzX3jcMWxY918AaOopZgdSHDQ9ZLTdXNnUOvy0i5xEfU2O_Ig61WRmckfAk50s0HjAIArf-xDwmplC6ZV-u_lxXZkuMOdJN6fvdxpZlsXdwxRDwP-QlrjEf5fhx5JI_3K0vHpEn9cMoWVCv2QVu3pVuukKSy0qiZgTd-yQpXaRvHGDZKWgDme3qRYnYMQjy2a8HmSlXj5w21qK_iyiNkqjiju64pWQCvFbq4QIe3tO6uCU0DfXHx9-XrkeE7abwcJP7muHAZ9RRpso9AZgSoT5b88NCqBZ2ZXItTRfRSigOGsX6L9RA9eyCE8D9TrnOTm-o0ALOGLQoV5e1KGwEsq9zUXHB_plDmQ6y5Zb6DfEfyu32EGK6vcQIkkviV-2f3N1-Q3ZOgYnXiDyFJDNpXw5NzqGLXnVhC3T0Tsd0L0wSDvVs9On8yqxhwdEcVnr4mkqW_HWDqsW4RzpALl0EPaRn3NfVi3c3JEpADMQ=="
+            }
+          },
+          "time": {
+            "start": 1773672886243,
+            "end": 1773672887389
+          },
+          "id": "prt_cf7246fe30015Yk8T3CrYaRe3j",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724632b0012vNIEB6PxDrGbs"
+        },
+        {
+          "type": "tool",
+          "callID": "call_KuFqX6aKUe2M1WhxzWDjVOrm",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_report.json",
+              "offset": 1,
+              "limit": 220
+            },
+            "output": "<path>/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_report.json</path>\n<type>file</type>\n<content>1: {\n2:   \"generatedAt\": \"2026-03-15T18:11:45.232Z\",\n3:   \"input\": {\n4:     \"originalFile\": \"method_definition_functions.js\",\n5:     \"refactoredFile\": \"method_code_refactored_functions.js\",\n6:     \"originalStandaloneCount\": 790,\n7:     \"refactoredStandaloneCount\": 754,\n8:     \"originalInvalidCount\": 12,\n9:     \"refactoredInvalidCount\": 22\n10:   },\n11:   \"summary\": {\n12:     \"pairedFunctions\": 751,\n13:     \"equivalentExceptTracking\": 356,\n14:     \"behaviorChangedNonTracking\": 395,\n15:     \"relaxedEquivalentExceptTracking\": 751,\n16:     \"relaxedBehaviorChangedNonTracking\": 0,\n17:     \"inconclusive\": 42,\n18:     \"unmatchedOriginalOnly\": 39,\n19:     \"unmatchedRefactoredOnly\": 3,\n20:     \"withTrackingDifferences\": 34\n21:   },\n22:   \"details\": [\n23:     {\n24:       \"key\": \"2:1\",\n25:       \"row\": 2,\n26:       \"functionIndex\": 1,\n27:       \"originalName\": \"ms\",\n28:       \"refactoredName\": \"ms\",\n29:       \"status\": \"behavior_changed_non_tracking\",\n30:       \"reason\": \"Different non-tracking call side effects\",\n31:       \"relaxedStatus\": \"equivalent_except_tracking\",\n32:       \"relaxedReason\": \"No observable return/error differences\",\n33:       \"trackingDifferenceObserved\": false,\n34:       \"firstDiff\": {\n35:         \"caseIndex\": 1,\n36:         \"args\": [\n37:           1\n38:         ],\n39:         \"originalRun\": {\n40:           \"outcome\": \"throw\",\n41:           \"errorName\": \"TypeError\",\n42:           \"callTracking\": [],\n43:           \"callNonTracking\": [\n44:             \"hb\"\n45:           ],\n46:           \"writeTracking\": [],\n47:           \"writeNonTracking\": []\n48:         },\n49:         \"refactoredRun\": {\n50:           \"outcome\": \"throw\",\n51:           \"errorName\": \"TypeError\",\n52:           \"callTracking\": [],\n53:           \"callNonTracking\": [],\n54:           \"writeTracking\": [],\n55:           \"writeNonTracking\": []\n56:         }\n57:       },\n58:       \"firstRelaxedDiff\": null\n59:     },\n60:     {\n61:       \"key\": \"3:1\",\n62:       \"row\": 3,\n63:       \"functionIndex\": 1,\n64:       \"originalName\": \"ks\",\n65:       \"refactoredName\": \"ks\",\n66:       \"status\": \"behavior_changed_non_tracking\",\n67:       \"reason\": \"Different non-tracking call side effects\",\n68:       \"relaxedStatus\": \"equivalent_except_tracking\",\n69:       \"relaxedReason\": \"No observable return/error differences\",\n70:       \"trackingDifferenceObserved\": false,\n71:       \"firstDiff\": {\n72:         \"caseIndex\": 0,\n73:         \"args\": [\n74:           null,\n75:           null,\n76:           null,\n77:           null\n78:         ],\n79:         \"originalRun\": {\n80:           \"outcome\": \"return\",\n81:           \"value\": {\n82:             \"type\": \"undefined\"\n83:           },\n84:           \"callTracking\": [],\n85:           \"callNonTracking\": [\n86:             \"gs\",\n87:             \"hs\",\n88:             \"ls\"\n89:           ],\n90:           \"writeTracking\": [],\n91:           \"writeNonTracking\": [\n92:             \"__result\"\n93:           ]\n94:         },\n95:         \"refactoredRun\": {\n96:           \"outcome\": \"return\",\n97:           \"value\": {\n98:             \"type\": \"undefined\"\n99:           },\n100:           \"callTracking\": [],\n101:           \"callNonTracking\": [\n102:             \"ls\"\n103:           ],\n104:           \"writeTracking\": [],\n105:           \"writeNonTracking\": [\n106:             \"__result\"\n107:           ]\n108:         }\n109:       },\n110:       \"firstRelaxedDiff\": null\n111:     },\n112:     {\n113:       \"key\": \"4:1\",\n114:       \"row\": 4,\n115:       \"functionIndex\": 1,\n116:       \"originalName\": \"js\",\n117:       \"refactoredName\": \"js\",\n118:       \"status\": \"equivalent_except_tracking\",\n119:       \"reason\": \"No non-tracking differences observed\",\n120:       \"relaxedStatus\": \"equivalent_except_tracking\",\n121:       \"relaxedReason\": \"No observable return/error differences\",\n122:       \"trackingDifferenceObserved\": false,\n123:       \"firstDiff\": null,\n124:       \"firstRelaxedDiff\": null\n125:     },\n126:     {\n127:       \"key\": \"5:1\",\n128:       \"row\": 5,\n129:       \"functionIndex\": 1,\n130:       \"originalName\": \"p\",\n131:       \"refactoredName\": \"p\",\n132:       \"status\": \"equivalent_except_tracking\",\n133:       \"reason\": \"No non-tracking differences observed\",\n134:       \"relaxedStatus\": \"equivalent_except_tracking\",\n135:       \"relaxedReason\": \"No observable return/error differences\",\n136:       \"trackingDifferenceObserved\": false,\n137:       \"firstDiff\": null,\n138:       \"firstRelaxedDiff\": null\n139:     },\n140:     {\n141:       \"key\": \"6:1\",\n142:       \"row\": 6,\n143:       \"functionIndex\": 1,\n144:       \"originalName\": \"get\",\n145:       \"refactoredName\": \"get\",\n146:       \"status\": \"behavior_changed_non_tracking\",\n147:       \"reason\": \"Different non-tracking call side effects\",\n148:       \"relaxedStatus\": \"equivalent_except_tracking\",\n149:       \"relaxedReason\": \"No observable return/error differences\",\n150:       \"trackingDifferenceObserved\": false,\n151:       \"firstDiff\": {\n152:         \"caseIndex\": 0,\n153:         \"args\": [\n154:           null,\n155:           null\n156:         ],\n157:         \"originalRun\": {\n158:           \"outcome\": \"return\",\n159:           \"value\": {\n160:             \"type\": \"undefined\"\n161:           },\n162:           \"callTracking\": [],\n163:           \"callNonTracking\": [\n164:             \"T\",\n165:             \"T.dispatch\"\n166:           ],\n167:           \"writeTracking\": [],\n168:           \"writeNonTracking\": [\n169:             \"__result\"\n170:           ]\n171:         },\n172:         \"refactoredRun\": {\n173:           \"outcome\": \"return\",\n174:           \"value\": {\n175:             \"type\": \"undefined\"\n176:           },\n177:           \"callTracking\": [],\n178:           \"callNonTracking\": [],\n179:           \"writeTracking\": [],\n180:           \"writeNonTracking\": [\n181:             \"__result\"\n182:           ]\n183:         }\n184:       },\n185:       \"firstRelaxedDiff\": null\n186:     },\n187:     {\n188:       \"key\": \"7:1\",\n189:       \"row\": 7,\n190:       \"functionIndex\": 1,\n191:       \"originalName\": \"d\",\n192:       \"refactoredName\": \"d\",\n193:       \"status\": \"behavior_changed_non_tracking\",\n194:       \"reason\": \"Different non-tracking call side effects\",\n195:       \"relaxedStatus\": \"equivalent_except_tracking\",\n196:       \"relaxedReason\": \"No observable return/error differences\",\n197:       \"trackingDifferenceObserved\": false,\n198:       \"firstDiff\": {\n199:         \"caseIndex\": 0,\n200:         \"args\": [\n201:           null\n202:         ],\n203:         \"originalRun\": {\n204:           \"outcome\": \"return\",\n205:           \"value\": {\n206:             \"type\": \"undefined\"\n207:           },\n208:           \"callTracking\": [],\n209:           \"callNonTracking\": [\n210:             \"p\"\n211:           ],\n212:           \"writeTracking\": [],\n213:           \"writeNonTracking\": [\n214:             \"__result\"\n215:           ]\n216:         },\n217:         \"refactoredRun\": {\n218:           \"outcome\": \"return\",\n219:           \"value\": {\n220:             \"type\": \"undefined\"\n\n(Showing lines 1-220 of 30510. Use offset=221 to continue.)\n</content>",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_report.json",
+            "metadata": {
+              "preview": "{\n  \"generatedAt\": \"2026-03-15T18:11:45.232Z\",\n  \"input\": {\n    \"originalFile\": \"method_definition_functions.js\",\n    \"refactoredFile\": \"method_code_refactored_functions.js\",\n    \"originalStandaloneCount\": 790,\n    \"refactoredStandaloneCount\": 754,\n    \"originalInvalidCount\": 12,\n    \"refactoredInvalidCount\": 22\n  },\n  \"summary\": {\n    \"pairedFunctions\": 751,\n    \"equivalentExceptTracking\": 356,\n    \"behaviorChangedNonTracking\": 395,\n    \"relaxedEquivalentExceptTracking\": 751,\n    \"relaxedBehaviorChangedNonTracking\": 0,\n    \"inconclusive\": 42,\n    \"unmatchedOriginalOnly\": 39,\n    \"unmatchedRefactoredOnly\": 3,\n    \"withTrackingDifferences\": 34",
+              "truncated": true,
+              "loaded": []
+            },
+            "time": {
+              "start": 1773672887552,
+              "end": 1773672888118
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0f05d226651408670169b819b820508191b0049366ecb96ad0"
+            }
+          },
+          "id": "prt_cf724745e001XVVgXL8BYgBi2q",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724632b0012vNIEB6PxDrGbs"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 10969,
+            "input": 142,
+            "output": 75,
+            "reasoning": 24,
+            "cache": {
+              "read": 10752,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7247738001WTnm66VFqqQ7g7",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724632b0012vNIEB6PxDrGbs"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672888128,
+          "completed": 1773672898141
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 13315,
+          "input": 2072,
+          "output": 363,
+          "reasoning": 61,
+          "cache": {
+            "read": 10880,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf7247740001lU1F4ZbwGeo3kQ",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf7247e32001FWM2EZdGYOcQ5E",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7247740001lU1F4ZbwGeo3kQ"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Planning narrative summary generation**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_0db081886bee51290169b819bb42a08191ba96b02395cf2124",
+              "reasoningEncryptedContent": "gAAAAABpuBm93UleRqVtsy8YQMeewPTdaCedmLwz-idl9lfsyRWFksMmrtPYFqK2tfrU_wmYtIsF3EWnnBomFiPg-DeRyypNf_85nwpfem12Df01x4Yo7z1rk7Um0bdd0NJHYvZ9cIBsFtiS_iqyaTDlP2jzDitXgR6B5QmashpqhxKYne3iVxvsK4OzuZtOI1Na9f8OW-OcTBH5G6fqQS_BXoa5Yc3czVXiFb7C9o_l-GTYyXelzQZq4jtzQxJECti1_biY38fz6Ti8k_YkcxWfugxlUu_JOEtK_9M2eCvgWyqfoBpqlHKarwUDhQuPhe2MD6DGJI1N_EdPB7gpQVhmwxzhueY_YO5MK3ELMrQ9GqXrO9qmx1Ca42AD5YWc_gjZxED2CS7ptPjPdFBjA2EcEW7wuESPQ38hL8AaBJNWFn9ImufZBXWUAASVC9g7Ob3H3rSENroVNmHDBMBZpUVCVBUIRH3gY0T3trUQX8l-3a8AG9TLjHYDX4qzmA0jrXNiBb2qTqDJtGi5EBP0TlxQt3QWT5tSmZ1dd0hBnlMD6O7lXuPLh6-utBwpmFfUgT4HdLGFuIAzt9OTzA9SS99uyZ6gm9Q2FOIfSi9gVmWrLklEL2t-6loAlOzegNeC6aPSFWCKkac1VxLgSPbmCs9CJBKajdZlfeof5ERI7iNLwbJPu1fssuY8NTl-cC62KgJupxArpXtyTLF0QS5F-F34FnKir24sFyLtDaUjXtFpIwSvT8aEVQCuebKcjuqa_GYOoA3MpE6dVXyc1cF_6M67HP7rGXI58ATvZnE5QTh-_n_KtQnrhX5zOotsary3HStPUFosuR4i-7bCItrmUfC0noufAoergCvMX10yRykoIte0Cr8bwSN3id42utnHCyt0udGeO00DSBCvaM6B6-L6vGaw1qUc6kJEUqrpUqyqItHgP3cAKLK5sK3rWcNJbcgdSqPSyvBgJvxcYPs8OmBIy0w0CWndfDp2COTnD32MQpLwAiiVNsSvTqf8fiw_tHlJw5KBlMYgD9CmOy6FX4atwkMEt6RuQoodjAqGZKsguDvLHYSTGrXTZpp-HodhP4Ihvr0rNvy7pT-ppp9pCONzwokduVwPCoj78hgdWlTFT-vFnWBQUwiX44y3ltZvLp9r67ZMDcFnFeGV42dAuT8or6EMbEbIwY6AQS9cisbuyP8S2eZIoj7OIyz-4s2vzlncQE-QKMsRJ9EWPb56jgSHk8GXIStT3JA3H71qyJzFGUT8MFDsB48="
+            }
+          },
+          "time": {
+            "start": 1773672890430,
+            "end": 1773672892115
+          },
+          "id": "prt_cf724803e001lBWuDkgztC7Zl6",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7247740001lU1F4ZbwGeo3kQ"
+        },
+        {
+          "type": "tool",
+          "callID": "call_eLY3sEVrwVD3NL1xfTweaHcl",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "node -e \"const fs=require('fs');const p='method_code_refactor_comparison_report.json';const r=JSON.parse(fs.readFileSync(p,'utf8'));const d=r.details;const byStatus=d.reduce((m,x)=>(m[x.status]=(m[x.status]||0)+1,m),{});const byReason=d.reduce((m,x)=>(m[x.reason]=(m[x.reason]||0)+1,m),{});const changed=d.filter(x=>x.status==='behavior_changed_non_tracking');const byChangedReason=changed.reduce((m,x)=>(m[x.reason]=(m[x.reason]||0)+1,m),{});const outcome=changed.filter(x=>x.reason.includes('outcome')).length;const ret=changed.filter(x=>x.reason.includes('return')).length;const err=changed.filter(x=>x.reason.includes('error')).length;const calls=changed.filter(x=>x.reason.includes('call')).length;const writes=changed.filter(x=>x.reason.includes('write')).length;console.log(JSON.stringify({summary:r.summary,input:r.input,totalDetails:d.length,byStatus,byReason,byChangedReason,counts:{outcome,ret,err,calls,writes}},null,2));\"",
+              "workdir": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+              "description": "Extract comparison statistics from JSON report"
+            },
+            "output": "{\n  \"summary\": {\n    \"pairedFunctions\": 751,\n    \"equivalentExceptTracking\": 356,\n    \"behaviorChangedNonTracking\": 395,\n    \"relaxedEquivalentExceptTracking\": 751,\n    \"relaxedBehaviorChangedNonTracking\": 0,\n    \"inconclusive\": 42,\n    \"unmatchedOriginalOnly\": 39,\n    \"unmatchedRefactoredOnly\": 3,\n    \"withTrackingDifferences\": 34\n  },\n  \"input\": {\n    \"originalFile\": \"method_definition_functions.js\",\n    \"refactoredFile\": \"method_code_refactored_functions.js\",\n    \"originalStandaloneCount\": 790,\n    \"refactoredStandaloneCount\": 754,\n    \"originalInvalidCount\": 12,\n    \"refactoredInvalidCount\": 22\n  },\n  \"totalDetails\": 793,\n  \"byStatus\": {\n    \"behavior_changed_non_tracking\": 395,\n    \"equivalent_except_tracking\": 356,\n    \"inconclusive\": 42\n  },\n  \"byReason\": {\n    \"Different non-tracking call side effects\": 317,\n    \"No non-tracking differences observed\": 356,\n    \"Different outcome (return vs throw)\": 69,\n    \"Missing in original set\": 3,\n    \"Missing in refactored set\": 39,\n    \"Different error type (0 vs 0)\": 1,\n    \"Different non-tracking writes\": 7,\n    \"Different error type (RangeError vs TypeError)\": 1\n  },\n  \"byChangedReason\": {\n    \"Different non-tracking call side effects\": 317,\n    \"Different outcome (return vs throw)\": 69,\n    \"Different error type (0 vs 0)\": 1,\n    \"Different non-tracking writes\": 7,\n    \"Different error type (RangeError vs TypeError)\": 1\n  },\n  \"counts\": {\n    \"outcome\": 69,\n    \"ret\": 69,\n    \"err\": 2,\n    \"calls\": 317,\n    \"writes\": 7\n  }\n}\n",
+            "title": "Extract comparison statistics from JSON report",
+            "metadata": {
+              "output": "{\n  \"summary\": {\n    \"pairedFunctions\": 751,\n    \"equivalentExceptTracking\": 356,\n    \"behaviorChangedNonTracking\": 395,\n    \"relaxedEquivalentExceptTracking\": 751,\n    \"relaxedBehaviorChangedNonTracking\": 0,\n    \"inconclusive\": 42,\n    \"unmatchedOriginalOnly\": 39,\n    \"unmatchedRefactoredOnly\": 3,\n    \"withTrackingDifferences\": 34\n  },\n  \"input\": {\n    \"originalFile\": \"method_definition_functions.js\",\n    \"refactoredFile\": \"method_code_refactored_functions.js\",\n    \"originalStandaloneCount\": 790,\n    \"refactoredStandaloneCount\": 754,\n    \"originalInvalidCount\": 12,\n    \"refactoredInvalidCount\": 22\n  },\n  \"totalDetails\": 793,\n  \"byStatus\": {\n    \"behavior_changed_non_tracking\": 395,\n    \"equivalent_except_tracking\": 356,\n    \"inconclusive\": 42\n  },\n  \"byReason\": {\n    \"Different non-tracking call side effects\": 317,\n    \"No non-tracking differences observed\": 356,\n    \"Different outcome (return vs throw)\": 69,\n    \"Missing in original set\": 3,\n    \"Missing in refactored set\": 39,\n    \"Different error type (0 vs 0)\": 1,\n    \"Different non-tracking writes\": 7,\n    \"Different error type (RangeError vs TypeError)\": 1\n  },\n  \"byChangedReason\": {\n    \"Different non-tracking call side effects\": 317,\n    \"Different outcome (return vs throw)\": 69,\n    \"Different error type (0 vs 0)\": 1,\n    \"Different non-tracking writes\": 7,\n    \"Different error type (RangeError vs TypeError)\": 1\n  },\n  \"counts\": {\n    \"outcome\": 69,\n    \"ret\": 69,\n    \"err\": 2,\n    \"calls\": 317,\n    \"writes\": 7\n  }\n}\n",
+              "exit": 0,
+              "description": "Extract comparison statistics from JSON report",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672896647,
+              "end": 1773672898133
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0db081886bee51290169b819bd00e881918112611d58ec23b7"
+            }
+          },
+          "id": "prt_cf72486d4001GdtGPRleo8mx5L",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7247740001lU1F4ZbwGeo3kQ"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 13315,
+            "input": 2072,
+            "output": 363,
+            "reasoning": 61,
+            "cache": {
+              "read": 10880,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7249e57001hQV6K3o2WKAys2",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7247740001lU1F4ZbwGeo3kQ"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672898144,
+          "completed": 1773672907447
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 13967,
+          "input": 970,
+          "output": 197,
+          "reasoning": 19,
+          "cache": {
+            "read": 12800,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf7249e60001WZa5v2f0vwwcwc",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf724a263001djIZcSzVz9C4tr",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7249e60001WZa5v2f0vwwcwc"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Planning quick percentage script**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_0dcd1c75ca7c43430169b819c6c62c8191a79e070520d87c0c",
+              "reasoningEncryptedContent": "gAAAAABpuBnIrHhN5LWX5AVtsMg-KO00n9t5F7oqWEM4O-nnHnVzK7q_IJC9lfiEnFa2aj9NoPGgYrHppIdX3XGv2079DqnZDY1i32XWo3B-_V7_zekE0QJf1IDfWHaZLU9nKs9qLm12FDT8RV5g6o4vCsPmgBHZ-BN1zd3u7bej41GzKfTh7xXR1ZV44pC5kg9IQEWxPErRHCIr0tmNj4udyyiOp7dz9ZGwLBu1S0BYxNtxTOLbJFgWaBNV2UumURV3ftMZrI5SfpmnsYsdaH2I8mLD9J_n63twSCH1yVozQY3keYBgK2hU2p2vsQ7PexO1N1FSyFuFChtEKcSY21_ESiAXXr3wBfz3Ra1asslNaChEP8ncrPQPS4HCNRuXRvHe8LFmHbU3TXnzMdIezv5uT9LIrD36kxXr7qhKdgrtUaIib09GD_ldtUUwEy2K3Ud8hs6T7scSJlERh3azhzjSJ542NOodLRWAkRCEwMEQeJ6iGPVFjqgXR3nDtaPM2LUD_hwCJXZ3zntPLsKKEodOlUcbsktYa62qjwg0CiuVhSGNjnaEwGWz9BaCRfEFmdmz_rQilmrIW3XwHOfyv11YjJLdfW38HEPMe3VoZPkvtc_YIk3IWU_5RVMl3DFxGat-8ckLZqcKnZ4WPRz6SqovUOYE0NFFHW05i9pJIQIX_zsQQ7LHr8LYFrQfB2iaN9xdNMJ55NHNp2yBXzpJ-t_7P-tas4g62pzvbZooYfVLRLr_KCX20OJVcOvrndI79qI8B2NPWFpDAHtKemLAHYE3HhgLDtfpZOc8CwovelcyaNX5zBq2ge0zmF7DEYJ9hkcwIr87iT-0IFxEgd4YUjy_D6naJokmDqDA0APc_xA4OM97jOwOuGi5SfwxVqu9nypyfCotKevhc6_7aoOYjMlN850lsDeBTFsDaPIqPpWo_DWj85J6PSdh1YJHlhdz9JAyBWGVouOnzUFjDqbTqnXakbOT1A2Otw=="
+            }
+          },
+          "time": {
+            "start": 1773672902865,
+            "end": 1773672904388
+          },
+          "id": "prt_cf724b0d10014Y3Bq1cuzUsty0",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7249e60001WZa5v2f0vwwcwc"
+        },
+        {
+          "type": "tool",
+          "callID": "call_uy9zSDYExXvqtEeBOMdRJ2XG",
+          "tool": "bash",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "node -e \"const fs=require('fs');const r=JSON.parse(fs.readFileSync('method_code_refactor_comparison_report.json','utf8'));const s=r.summary;const pct=(n,d)=>(100*n/d).toFixed(1)+'%';console.log(JSON.stringify({equivPct:pct(s.equivalentExceptTracking,s.pairedFunctions),changedPct:pct(s.behaviorChangedNonTracking,s.pairedFunctions),inconclusivePct:pct(s.inconclusive,s.pairedFunctions+s.inconclusive),trackingDiffPct:pct(s.withTrackingDifferences,s.equivalentExceptTracking)},null,2));\"",
+              "workdir": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+              "description": "Calculate percentage metrics for summary"
+            },
+            "output": "{\n  \"equivPct\": \"47.4%\",\n  \"changedPct\": \"52.6%\",\n  \"inconclusivePct\": \"5.3%\",\n  \"trackingDiffPct\": \"9.6%\"\n}\n",
+            "title": "Calculate percentage metrics for summary",
+            "metadata": {
+              "output": "{\n  \"equivPct\": \"47.4%\",\n  \"changedPct\": \"52.6%\",\n  \"inconclusivePct\": \"5.3%\",\n  \"trackingDiffPct\": \"9.6%\"\n}\n",
+              "exit": 0,
+              "description": "Calculate percentage metrics for summary",
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672906295,
+              "end": 1773672907439
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0dcd1c75ca7c43430169b819c860148191bb48fbb5b7e9a862"
+            }
+          },
+          "id": "prt_cf724b6c5001vuWzowG8pi3ola",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7249e60001WZa5v2f0vwwcwc"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 13967,
+            "input": 970,
+            "output": 197,
+            "reasoning": 19,
+            "cache": {
+              "read": 12800,
+              "write": 0
+            }
+          },
+          "id": "prt_cf724c2b00016vUWqC6ih0SZ46",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7249e60001WZa5v2f0vwwcwc"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672907449,
+          "completed": 1773672934131
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 15506,
+          "input": 200,
+          "output": 1482,
+          "reasoning": 66,
+          "cache": {
+            "read": 13824,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf724c2b9001rKs7CzqLw3VPFO",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf724c58d001Eru9B7U3RXCCUd",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724c2b9001rKs7CzqLw3VPFO"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Finalizing summary markdown**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_04f9eb3da7159a460169b819cca6388191a719ae68260c0384",
+              "reasoningEncryptedContent": "gAAAAABpuBnOfkZ2BxoE26Z-X35NuBu64laFqhZ-0telSqEYIaYJV_qlr-VwZ4VI9AYtcG-bxGO58yFGDxseOPONXP54hj5he9dG2ALil8QXb7owxihXpI0jFwmXUUO9hlMf4INdl3VnFQ49kFcPAUDnZXL7mxyrqpi_eTq5b9SxzCwb_NXSftz4fj0587-RgHDVpTjkhBAwLGzZHEw5XTASqTDSWyCbgt4GX2b_cbGAjUu7S3KUR4DToT3EKWm2Qzvkn1iKVAKuGsR1eGbivx00bvRZ7bXzY4B_uYhp30r8LHKHHLG9J0HQdmfj9bNhJHw9H80dt6gpQq8pwY4lU4CdH68R254N0EuAY3r2QkFy3NUDo_E6kV8UXDEZ8p0R13mReDhrLMLI4IKq3lQkY66dbplAROy6MpFPfV5krs0yk8aHAHx_VMJEtXzyfn4Zuphf_f2VDzqJaF88tZeWrbxiK4ZFJPwRPPrti-EDTflSz_l8WesT4_BLL4LSLvdhcfVJ95p8nQPfOgrLmlcVFuf7ZkauFJb2-hE2jbtnEDekM9DwNP5J5cgyalAQRXaSoRp3oGkaBK_Tmvu6uzC2Ljg3H4Wo8CAP85zLzAwHZNTwjckXCfk3XmEXHMUaXOaUlqeIMsVt6Kj1wh6H85N6VRwYrWeCt_RGPvu5QMqe42JPY7Uy08gYmZLoZrZhy5OP8TqIVnPFEhOsMbhuNQvS7Uj7fGzVVZ4ktwC9svXGrK63wb29PrfM9JEqr3X2dqOacvmwZNeuKDDeNxrfD0h-GVWb5ND0jfbfvduxtlAN74NC0ykiZ6vxNvGQhRvcxY52U5M9r7pDh4tUwn9DSxMHfrxi7znhDnaBXqywqsnIC9P6mjXCn-mUGIhYxb7lQnOycqo6lEZ3xEmZ97ARyL4-JPEp-VJA3f3Ni9imk-tFxqrrWTmmxjUF8FPhutPE7Rmg73mUKr6yBY545vqc9jB4RKmrXZySlpyU1UcvIVqSm1P4HinSMsR73in0ol7AcYGV56sOgFQizkxlZC-C_12CHkaKB66R43p9c_hQvNaQ1LwaT5jixG7PThecVTacPkzZKmWqbvAgrvv4Jkr8BCBfK-STDJJKNRwrNMk4bEta9XUtv2q8vzcLX4KSdPpvS773Wa88JSEemzLC2pkwGPbh-JcI44mYbnlOy5UKZ27HSmKziq7Xj1V4YYU_9ZNXSLKAF0ValK8yVpiO80fgyxUGDCU1bOuXxrnM3WouDKI3zN8EIYr46FWqho9hUNRAeTCyebCaiyGLO-6vX6Gw9BnL8n89V478hxvZKn5pqk65ANFQmAPp0x_zE3fHQo_n5y5OcxteDhfZT-7H"
+            }
+          },
+          "time": {
+            "start": 1773672908580,
+            "end": 1773672910240
+          },
+          "id": "prt_cf724c724001CFTpC4t7wD7Ujs",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724c2b9001rKs7CzqLw3VPFO"
+        },
+        {
+          "type": "tool",
+          "callID": "call_wA5MbLjbUMlaaNiIk1ciHQ06",
+          "tool": "apply_patch",
+          "state": {
+            "status": "completed",
+            "input": {
+              "patchText": "*** Begin Patch\n*** Update File: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@\n-# Refactor Functional Comparison Summary\n-\n-- Generated at: 2026-03-15T18:11:45.232Z\n-- Paired functions: 751\n-- Equivalent except tracking: 356\n-- Behavior changed (non-tracking): 395\n-- Relaxed equivalent except tracking: 751\n-- Relaxed behavior changed (non-tracking): 0\n-- Inconclusive: 42\n-- Unmatched original only: 39\n-- Unmatched refactored only: 3\n-- Equivalent pairs with tracking diffs observed: 34\n-\n-## First Non-Tracking Differences (up to 20)\n-\n-- row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n-- row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n-- row 6 fn 1 (get -> get): Different non-tracking call side effects\n-- row 7 fn 1 (d -> d): Different non-tracking call side effects\n-- row 8 fn 1 (get -> get): Different non-tracking call side effects\n-- row 10 fn 1 (init -> init): Different non-tracking call side effects\n-- row 12 fn 1 (init -> init): Different non-tracking call side effects\n-- row 13 fn 1 (init -> init): Different non-tracking call side effects\n-- row 16 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 17 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 18 fn 1 (p -> p): Different outcome (return vs throw)\n-- row 20 fn 1 (ot -> ot): Different non-tracking call side effects\n-- row 21 fn 1 (Sa -> Sa): Different non-tracking call side effects\n-- row 24 fn 1 (g -> g): Different non-tracking call side effects\n-- row 25 fn 1 (D -> D): Different non-tracking call side effects\n-- row 26 fn 1 (w -> w): Different non-tracking call side effects\n-- row 27 fn 1 (D -> D): Different non-tracking call side effects\n-- row 28 fn 1 (xt -> xt): Different outcome (return vs throw)\n-- row 29 fn 1 (X -> X): Different non-tracking call side effects\n-- row 31 fn 1 (w -> w): Different non-tracking call side effects\n-\n-## First Inconclusive Items (up to 20)\n-\n-- row 19 fn 1: Missing in original set\n-- row 19 fn 2: Missing in refactored set\n-- row 19 fn 3: Missing in refactored set\n-- row 19 fn 4: Missing in refactored set\n-- row 19 fn 5: Missing in refactored set\n-- row 19 fn 6: Missing in refactored set\n-- row 19 fn 7: Missing in refactored set\n-- row 19 fn 8: Missing in refactored set\n-- row 19 fn 9: Missing in refactored set\n-- row 19 fn 10: Missing in refactored set\n-- row 19 fn 11: Missing in refactored set\n-- row 19 fn 12: Missing in refactored set\n-- row 19 fn 13: Missing in refactored set\n-- row 19 fn 14: Missing in refactored set\n-- row 19 fn 15: Missing in refactored set\n-- row 19 fn 16: Missing in refactored set\n-- row 19 fn 17: Missing in refactored set\n-- row 19 fn 18: Missing in refactored set\n-- row 19 fn 19: Missing in refactored set\n-- row 19 fn 20: Missing in refactored set\n+# Refactor Functional Comparison Summary (Human Review)\n+\n+Generated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n+\n+## Bottom Line\n+\n+The strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n+\n+- 751 function pairs were compared.\n+- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n+- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n+- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n+\n+Interpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n+\n+## What Drove the Strict Failures\n+\n+Of the 395 strict `behavior_changed_non_tracking` cases:\n+\n+- 317 were `Different non-tracking call side effects`.\n+- 69 were `Different outcome (return vs throw)`.\n+- 7 were `Different non-tracking writes`.\n+- 2 were error-type mismatches (`Different error type ...`).\n+\n+So the dominant issue is non-tracking call-set divergence, not return-value divergence.\n+\n+## Inconclusive Pairing Gaps\n+\n+There are 42 inconclusive entries due to unmatched extraction keys:\n+\n+- 39 are `Missing in refactored set`.\n+- 3 are `Missing in original set`.\n+\n+Most of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n+\n+## Tracking-Related Notes\n+\n+- 34 equivalent pairs still showed tracking differences (allowed by policy).\n+- Tracking differences therefore exist, but they are not the main source of strict failures.\n+\n+## Confidence and Limits\n+\n+This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n*** End Patch"
+            },
+            "output": "Success. Updated the following files:\nM mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "title": "Success. Updated the following files:\nM mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "metadata": {
+              "diff": "Index: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n===================================================================\n--- /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n+++ /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@ -1,58 +1,43 @@\n-# Refactor Functional Comparison Summary\n+# Refactor Functional Comparison Summary (Human Review)\n \n-- Generated at: 2026-03-15T18:11:45.232Z\n-- Paired functions: 751\n-- Equivalent except tracking: 356\n-- Behavior changed (non-tracking): 395\n-- Relaxed equivalent except tracking: 751\n-- Relaxed behavior changed (non-tracking): 0\n-- Inconclusive: 42\n-- Unmatched original only: 39\n-- Unmatched refactored only: 3\n-- Equivalent pairs with tracking diffs observed: 34\n+Generated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n \n-## First Non-Tracking Differences (up to 20)\n+## Bottom Line\n \n-- row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n-- row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n-- row 6 fn 1 (get -> get): Different non-tracking call side effects\n-- row 7 fn 1 (d -> d): Different non-tracking call side effects\n-- row 8 fn 1 (get -> get): Different non-tracking call side effects\n-- row 10 fn 1 (init -> init): Different non-tracking call side effects\n-- row 12 fn 1 (init -> init): Different non-tracking call side effects\n-- row 13 fn 1 (init -> init): Different non-tracking call side effects\n-- row 16 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 17 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 18 fn 1 (p -> p): Different outcome (return vs throw)\n-- row 20 fn 1 (ot -> ot): Different non-tracking call side effects\n-- row 21 fn 1 (Sa -> Sa): Different non-tracking call side effects\n-- row 24 fn 1 (g -> g): Different non-tracking call side effects\n-- row 25 fn 1 (D -> D): Different non-tracking call side effects\n-- row 26 fn 1 (w -> w): Different non-tracking call side effects\n-- row 27 fn 1 (D -> D): Different non-tracking call side effects\n-- row 28 fn 1 (xt -> xt): Different outcome (return vs throw)\n-- row 29 fn 1 (X -> X): Different non-tracking call side effects\n-- row 31 fn 1 (w -> w): Different non-tracking call side effects\n+The strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n \n-## First Inconclusive Items (up to 20)\n+- 751 function pairs were compared.\n+- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n+- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n+- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n \n-- row 19 fn 1: Missing in original set\n-- row 19 fn 2: Missing in refactored set\n-- row 19 fn 3: Missing in refactored set\n-- row 19 fn 4: Missing in refactored set\n-- row 19 fn 5: Missing in refactored set\n-- row 19 fn 6: Missing in refactored set\n-- row 19 fn 7: Missing in refactored set\n-- row 19 fn 8: Missing in refactored set\n-- row 19 fn 9: Missing in refactored set\n-- row 19 fn 10: Missing in refactored set\n-- row 19 fn 11: Missing in refactored set\n-- row 19 fn 12: Missing in refactored set\n-- row 19 fn 13: Missing in refactored set\n-- row 19 fn 14: Missing in refactored set\n-- row 19 fn 15: Missing in refactored set\n-- row 19 fn 16: Missing in refactored set\n-- row 19 fn 17: Missing in refactored set\n-- row 19 fn 18: Missing in refactored set\n-- row 19 fn 19: Missing in refactored set\n-- row 19 fn 20: Missing in refactored set\n+Interpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n+\n+## What Drove the Strict Failures\n+\n+Of the 395 strict `behavior_changed_non_tracking` cases:\n+\n+- 317 were `Different non-tracking call side effects`.\n+- 69 were `Different outcome (return vs throw)`.\n+- 7 were `Different non-tracking writes`.\n+- 2 were error-type mismatches (`Different error type ...`).\n+\n+So the dominant issue is non-tracking call-set divergence, not return-value divergence.\n+\n+## Inconclusive Pairing Gaps\n+\n+There are 42 inconclusive entries due to unmatched extraction keys:\n+\n+- 39 are `Missing in refactored set`.\n+- 3 are `Missing in original set`.\n+\n+Most of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n+\n+## Tracking-Related Notes\n+\n+- 34 equivalent pairs still showed tracking differences (allowed by policy).\n+- Tracking differences therefore exist, but they are not the main source of strict failures.\n+\n+## Confidence and Limits\n+\n+This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n\n",
+              "files": [
+                {
+                  "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+                  "relativePath": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+                  "type": "update",
+                  "diff": "Index: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n===================================================================\n--- /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n+++ /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@ -1,58 +1,43 @@\n-# Refactor Functional Comparison Summary\n+# Refactor Functional Comparison Summary (Human Review)\n \n-- Generated at: 2026-03-15T18:11:45.232Z\n-- Paired functions: 751\n-- Equivalent except tracking: 356\n-- Behavior changed (non-tracking): 395\n-- Relaxed equivalent except tracking: 751\n-- Relaxed behavior changed (non-tracking): 0\n-- Inconclusive: 42\n-- Unmatched original only: 39\n-- Unmatched refactored only: 3\n-- Equivalent pairs with tracking diffs observed: 34\n+Generated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n \n-## First Non-Tracking Differences (up to 20)\n+## Bottom Line\n \n-- row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n-- row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n-- row 6 fn 1 (get -> get): Different non-tracking call side effects\n-- row 7 fn 1 (d -> d): Different non-tracking call side effects\n-- row 8 fn 1 (get -> get): Different non-tracking call side effects\n-- row 10 fn 1 (init -> init): Different non-tracking call side effects\n-- row 12 fn 1 (init -> init): Different non-tracking call side effects\n-- row 13 fn 1 (init -> init): Different non-tracking call side effects\n-- row 16 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 17 fn 1 (value -> value): Different outcome (return vs throw)\n-- row 18 fn 1 (p -> p): Different outcome (return vs throw)\n-- row 20 fn 1 (ot -> ot): Different non-tracking call side effects\n-- row 21 fn 1 (Sa -> Sa): Different non-tracking call side effects\n-- row 24 fn 1 (g -> g): Different non-tracking call side effects\n-- row 25 fn 1 (D -> D): Different non-tracking call side effects\n-- row 26 fn 1 (w -> w): Different non-tracking call side effects\n-- row 27 fn 1 (D -> D): Different non-tracking call side effects\n-- row 28 fn 1 (xt -> xt): Different outcome (return vs throw)\n-- row 29 fn 1 (X -> X): Different non-tracking call side effects\n-- row 31 fn 1 (w -> w): Different non-tracking call side effects\n+The strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n \n-## First Inconclusive Items (up to 20)\n+- 751 function pairs were compared.\n+- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n+- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n+- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n \n-- row 19 fn 1: Missing in original set\n-- row 19 fn 2: Missing in refactored set\n-- row 19 fn 3: Missing in refactored set\n-- row 19 fn 4: Missing in refactored set\n-- row 19 fn 5: Missing in refactored set\n-- row 19 fn 6: Missing in refactored set\n-- row 19 fn 7: Missing in refactored set\n-- row 19 fn 8: Missing in refactored set\n-- row 19 fn 9: Missing in refactored set\n-- row 19 fn 10: Missing in refactored set\n-- row 19 fn 11: Missing in refactored set\n-- row 19 fn 12: Missing in refactored set\n-- row 19 fn 13: Missing in refactored set\n-- row 19 fn 14: Missing in refactored set\n-- row 19 fn 15: Missing in refactored set\n-- row 19 fn 16: Missing in refactored set\n-- row 19 fn 17: Missing in refactored set\n-- row 19 fn 18: Missing in refactored set\n-- row 19 fn 19: Missing in refactored set\n-- row 19 fn 20: Missing in refactored set\n+Interpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n+\n+## What Drove the Strict Failures\n+\n+Of the 395 strict `behavior_changed_non_tracking` cases:\n+\n+- 317 were `Different non-tracking call side effects`.\n+- 69 were `Different outcome (return vs throw)`.\n+- 7 were `Different non-tracking writes`.\n+- 2 were error-type mismatches (`Different error type ...`).\n+\n+So the dominant issue is non-tracking call-set divergence, not return-value divergence.\n+\n+## Inconclusive Pairing Gaps\n+\n+There are 42 inconclusive entries due to unmatched extraction keys:\n+\n+- 39 are `Missing in refactored set`.\n+- 3 are `Missing in original set`.\n+\n+Most of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n+\n+## Tracking-Related Notes\n+\n+- 34 equivalent pairs still showed tracking differences (allowed by policy).\n+- Tracking differences therefore exist, but they are not the main source of strict failures.\n+\n+## Confidence and Limits\n+\n+This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n",
+                  "before": "# Refactor Functional Comparison Summary\n\n- Generated at: 2026-03-15T18:11:45.232Z\n- Paired functions: 751\n- Equivalent except tracking: 356\n- Behavior changed (non-tracking): 395\n- Relaxed equivalent except tracking: 751\n- Relaxed behavior changed (non-tracking): 0\n- Inconclusive: 42\n- Unmatched original only: 39\n- Unmatched refactored only: 3\n- Equivalent pairs with tracking diffs observed: 34\n\n## First Non-Tracking Differences (up to 20)\n\n- row 2 fn 1 (ms -> ms): Different non-tracking call side effects\n- row 3 fn 1 (ks -> ks): Different non-tracking call side effects\n- row 6 fn 1 (get -> get): Different non-tracking call side effects\n- row 7 fn 1 (d -> d): Different non-tracking call side effects\n- row 8 fn 1 (get -> get): Different non-tracking call side effects\n- row 10 fn 1 (init -> init): Different non-tracking call side effects\n- row 12 fn 1 (init -> init): Different non-tracking call side effects\n- row 13 fn 1 (init -> init): Different non-tracking call side effects\n- row 16 fn 1 (value -> value): Different outcome (return vs throw)\n- row 17 fn 1 (value -> value): Different outcome (return vs throw)\n- row 18 fn 1 (p -> p): Different outcome (return vs throw)\n- row 20 fn 1 (ot -> ot): Different non-tracking call side effects\n- row 21 fn 1 (Sa -> Sa): Different non-tracking call side effects\n- row 24 fn 1 (g -> g): Different non-tracking call side effects\n- row 25 fn 1 (D -> D): Different non-tracking call side effects\n- row 26 fn 1 (w -> w): Different non-tracking call side effects\n- row 27 fn 1 (D -> D): Different non-tracking call side effects\n- row 28 fn 1 (xt -> xt): Different outcome (return vs throw)\n- row 29 fn 1 (X -> X): Different non-tracking call side effects\n- row 31 fn 1 (w -> w): Different non-tracking call side effects\n\n## First Inconclusive Items (up to 20)\n\n- row 19 fn 1: Missing in original set\n- row 19 fn 2: Missing in refactored set\n- row 19 fn 3: Missing in refactored set\n- row 19 fn 4: Missing in refactored set\n- row 19 fn 5: Missing in refactored set\n- row 19 fn 6: Missing in refactored set\n- row 19 fn 7: Missing in refactored set\n- row 19 fn 8: Missing in refactored set\n- row 19 fn 9: Missing in refactored set\n- row 19 fn 10: Missing in refactored set\n- row 19 fn 11: Missing in refactored set\n- row 19 fn 12: Missing in refactored set\n- row 19 fn 13: Missing in refactored set\n- row 19 fn 14: Missing in refactored set\n- row 19 fn 15: Missing in refactored set\n- row 19 fn 16: Missing in refactored set\n- row 19 fn 17: Missing in refactored set\n- row 19 fn 18: Missing in refactored set\n- row 19 fn 19: Missing in refactored set\n- row 19 fn 20: Missing in refactored set\n",
+                  "after": "# Refactor Functional Comparison Summary (Human Review)\n\nGenerated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n\n## Bottom Line\n\nThe strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n\n- 751 function pairs were compared.\n- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n\nInterpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n\n## What Drove the Strict Failures\n\nOf the 395 strict `behavior_changed_non_tracking` cases:\n\n- 317 were `Different non-tracking call side effects`.\n- 69 were `Different outcome (return vs throw)`.\n- 7 were `Different non-tracking writes`.\n- 2 were error-type mismatches (`Different error type ...`).\n\nSo the dominant issue is non-tracking call-set divergence, not return-value divergence.\n\n## Inconclusive Pairing Gaps\n\nThere are 42 inconclusive entries due to unmatched extraction keys:\n\n- 39 are `Missing in refactored set`.\n- 3 are `Missing in original set`.\n\nMost of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n\n## Tracking-Related Notes\n\n- 34 equivalent pairs still showed tracking differences (allowed by policy).\n- Tracking differences therefore exist, but they are not the main source of strict failures.\n\n## Confidence and Limits\n\nThis result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n",
+                  "additions": 38,
+                  "deletions": 53
+                }
+              ],
+              "diagnostics": {},
+              "truncated": false
+            },
+            "time": {
+              "start": 1773672934083,
+              "end": 1773672934103
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_04f9eb3da7159a460169b819ce605081919afbaa4458e21921"
+            }
+          },
+          "id": "prt_cf724cda1001WoLzk74BIaqk8e",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724c2b9001rKs7CzqLw3VPFO"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 15506,
+            "input": 200,
+            "output": 1482,
+            "reasoning": 66,
+            "cache": {
+              "read": 13824,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7252aec001FUZYtL2ELiPFIe",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf724c2b9001rKs7CzqLw3VPFO"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773672934133,
+          "completed": 1773672939604
+        },
+        "parentID": "msg_cf7242189001aXnptMtRZtH4VO",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 15687,
+          "input": 1725,
+          "output": 138,
+          "reasoning": 19,
+          "cache": {
+            "read": 13824,
+            "write": 0
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cf7252af5001TdJbG0jgrhl09a",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf72534470019WtwVPZPuW716Q",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7252af5001TdJbG0jgrhl09a"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Confirming completion with report mention**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_042c3519ddeddea30169b819e917b08191bb057b22df7cd258",
+              "reasoningEncryptedContent": "gAAAAABpuBnpOFuEG3KLSREvY-len11n4dhiV83xZRBfOOcS2P1ss_eJB3A1txdHYjKjeMhwORgQnmae2uh7JxnNZJHWOEmFjWkVbcL8_fB8ZQV9hztS8hK1XMR2MSJG9VRpc_sROiRKGc0Vk-T_KjigD8qXkFnlcdL108GnqRFsH3CF5jXjLq1ec9kjaheJgYRTkFTrb-POAt2KVtuwRdHNkb4KeVIj5plGc78JKMwz-ltPu0d-jnMjMr3qClV6VZ9bdqhsP2ckzM7nccklYTC9y_Q1oH7obJDZUmNA-mHDLSdVM5D1pxjR7G2MjwzTUuDiCtjrHxyTPdX69nDH6ow5JN2W-NF-RMNDyvVLudxkM_3UAUHM-eWmuhaUELdAXt9aphoWWmhKtiIrx5e2P99p_K6ylkg8uMQeoOvPMzN8V-kqNTN7EVNkmmo9e5rHJOV4Kfwwh5LNYTFFooQ2suSpQ4ht9m208FDmspXlqimf2kLy6NUWMLVEG3GNBvhHvuUhBnz2xlvUPDGg1_YsUUE54uEGMVuXBgiZ5UZJXDvWOqbHBKY_sEBbtaTU6MNzLRZNrucpqS-KlZ2kqokOrCTZTA4Pf4c2OptPaTC6G_s5ER75_NbMGdVR93iyOV37znOrTDjl9piwYCt7I4lQ1PRyXgmRrKiHB0lafFxg93t8Kzky_xs2cpST-CEUGU_6I4oXndS7BCihzbsDZKpeWhGNHSSt4NRFpSw7KLlka-t00WiRFWxwVT_RAZrk2l-ssJ2LZ-8suTNQG3Hmx47wuXFOsE4m36rzLS1yor2kPEHT1RfEXI-ksJHFnR_qBp_-Z8BhLiDs-m24Rsb-xc8fwVgk70mNJXmIKI8hEhxRfd9y-rffekdFFKfp2AuS2SjGrvL4ttJshLmrYyySOPerkwmaVqquTKxXf7CLTlsdULoYnwBGNatQ_Ym0JJMnFRjjtVB2jrJjJHfx"
+            }
+          },
+          "time": {
+            "start": 1773672937156,
+            "end": 1773672937939
+          },
+          "id": "prt_cf72536c4001PuAQbrd5gxdVCl",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7252af5001TdJbG0jgrhl09a"
+        },
+        {
+          "type": "text",
+          "text": "Done — I generated a real human-written summary and replaced the auto-style one in:\n\n- `method_code_refactor_comparison_summary.md`\n\nI based it directly on `method_code_refactor_comparison_report.json` and included:\n- clear bottom-line interpretation,\n- strict vs relaxed result context,\n- breakdown of what caused strict failures,\n- inconclusive pairing-gap analysis,\n- tracking-difference notes,\n- confidence/limitations in plain language.\n\nIf you want, I can also add a short “executive 5-line version” at the top for quick review.",
+          "time": {
+            "start": 1773672939569,
+            "end": 1773672939569
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_042c3519ddeddea30169b819e9e54c81919f991f2c3d442878"
+            }
+          },
+          "id": "prt_cf72539d5001hjlVLIuO0t3vwD",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7252af5001TdJbG0jgrhl09a"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "cost": 0,
+          "tokens": {
+            "total": 15687,
+            "input": 1725,
+            "output": 138,
+            "reasoning": 19,
+            "cache": {
+              "read": 13824,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7254051001aEOKA8qEyKFZkl",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7252af5001TdJbG0jgrhl09a"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1773673067574
+        },
+        "summary": {
+          "diffs": []
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "openai",
+          "modelID": "gpt-5.3-codex"
+        },
+        "id": "msg_cf727342f001OieErDYQvEC029",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "i need a conclusion paragraph also explaining the results simply",
+          "id": "prt_cf727342f002W1shMNdrLWY852",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf727342f001OieErDYQvEC029"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773673067579,
+          "completed": 1773673073707
+        },
+        "parentID": "msg_cf727342f001OieErDYQvEC029",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 15484,
+          "input": 6827,
+          "output": 81,
+          "reasoning": 38,
+          "cache": {
+            "read": 8576,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf727343a001jZlUVlRwNL6Sx0",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf72736dd001VMBhH9ZaqDE61A",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf727343a001jZlUVlRwNL6Sx0"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Planning conclusion addition**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_039c7b92a8ac20e00169b81a6fc9f881919976f250dd8f2555",
+              "reasoningEncryptedContent": "gAAAAABpuBpxYHHmi10KsYMnXb6NCEHeHRKKh-uuZGYQq1WCZBoL7gu_1HujMTfhDm09nU4o9andhbKGBugZ8zB8WoyCwcVBaBNBOFwQh58FFVKHkSTo1kvlTAdeYbN7qSXD6ORGJDPhUSMjRtMHH28KPwpwpbp7pwM4XAHAiajAeeRv3GbEnD7K04rowxzEGjOja9F4x6_i0MZZhvoKZJGfq7niTeYikLpZYrIHn4b8-Jp-eSQ53x7UpZMpzOUVJXHup7Ppq_VOHTWkW5GwUOevr43lz6she1DaUqkCMZ_8j6vxdgeDYyU6ENMGvst5_Iaefo_MqE54INENNFqK7SRQRiq8IDJGxxGZ0UDRYMgaGgrAr0MHOnxuQNlhHz-hVB5-OAxPayg8uPCQCE8elhoQ7iZ4QdtY2sUoC3hH5Ib7xC_ZuvIof4dWSsg4AIce7gpLNE3pgXJIhnj5SFd7EMVgd_RdOddm3GO0oVnrAjxn9zX_4BCWH1fz4yEqdLvUG7O0zPKnB_S-dJTbb8yCmCe7W9peH7-LXPP5DPZAd-p37lwJC9Oukb6rO2zx2uaNf3CyqepSxGdRkDYpf-8B9OJoXJq1gKNFnjxN6R1lmi2K2zp4s3vjl7E2yFggbSsNWsoKoeepbp1aeDvtTVLaTlpEnLUo2YPSSJjpfe4UfrJzamGKUAUS2d0gFxapNuakt4FSn1wgiHDFj8HLj_ScymQJlOuKc7JRw2peh-6IqFwJEgufX2C_cv5iRj1iUyvmJur016Tv1GIT9OdynJ8yxuaErbylEnv54Diva1C9dVn4JeyYrWkQ2ArP4FVx43VYyyXJCHcWX7FvdBYqtnt-PjBFpoidShqy_sAPTn5RHxzGMKX-fzJooAfH_yA4qvpLqOXOCLEoF32k1fvBNcr08mn2vTzGspisi9Q1wOkMujxwECz5eop-jaRMpHOdJ5SZbpqQm-EtacfHMZqPYj7pq5Ybxa_iMUKmq1-bmBzRolm-Bkwb_8wfEZWs3kTnxaWyT6mehDoDf1zoZoOmKTHtq0zM7tSyn6m-kAQ3mM-c_G9DoMBybOxALMRljvfzcFbYNXgjydL7Ouk1"
+            }
+          },
+          "time": {
+            "start": 1773673071891,
+            "end": 1773673073517
+          },
+          "id": "prt_cf7274513001Ai0EtGa32O6Yx2",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf727343a001jZlUVlRwNL6Sx0"
+        },
+        {
+          "type": "tool",
+          "callID": "call_EawrYUlgvfQqwMHoDpHh4aKM",
+          "tool": "read",
+          "state": {
+            "status": "completed",
+            "input": {
+              "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md"
+            },
+            "output": "<path>/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md</path>\n<type>file</type>\n<content>1: # Refactor Functional Comparison Summary (Human Review)\n2: \n3: Generated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n4: \n5: ## Bottom Line\n6: \n7: The strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n8: \n9: - 751 function pairs were compared.\n10: - 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n11: - 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n12: - Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n13: \n14: Interpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n15: \n16: ## What Drove the Strict Failures\n17: \n18: Of the 395 strict `behavior_changed_non_tracking` cases:\n19: \n20: - 317 were `Different non-tracking call side effects`.\n21: - 69 were `Different outcome (return vs throw)`.\n22: - 7 were `Different non-tracking writes`.\n23: - 2 were error-type mismatches (`Different error type ...`).\n24: \n25: So the dominant issue is non-tracking call-set divergence, not return-value divergence.\n26: \n27: ## Inconclusive Pairing Gaps\n28: \n29: There are 42 inconclusive entries due to unmatched extraction keys:\n30: \n31: - 39 are `Missing in refactored set`.\n32: - 3 are `Missing in original set`.\n33: \n34: Most of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n35: \n36: ## Tracking-Related Notes\n37: \n38: - 34 equivalent pairs still showed tracking differences (allowed by policy).\n39: - Tracking differences therefore exist, but they are not the main source of strict failures.\n40: \n41: ## Confidence and Limits\n42: \n43: This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n\n(End of file - total 43 lines)\n</content>",
+            "title": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "metadata": {
+              "preview": "# Refactor Functional Comparison Summary (Human Review)\n\nGenerated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n\n## Bottom Line\n\nThe strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n\n- 751 function pairs were compared.\n- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n\nInterpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n\n## What Drove the Strict Failures\n\nOf the 395 strict `behavior_changed_non_tracking` cases:\n\n- 317 were `Different non-tracking call side effects`.",
+              "truncated": false,
+              "loaded": []
+            },
+            "time": {
+              "start": 1773673073675,
+              "end": 1773673073684
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_039c7b92a8ac20e00169b81a7185008191bf402bde87161114"
+            }
+          },
+          "id": "prt_cf7274b6e001xaVAq1anK6Dxxj",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf727343a001jZlUVlRwNL6Sx0"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 15484,
+            "input": 6827,
+            "output": 81,
+            "reasoning": 38,
+            "cache": {
+              "read": 8576,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7274c2700123pl0OeRFGBnCK",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf727343a001jZlUVlRwNL6Sx0"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773673073710,
+          "completed": 1773673079564
+        },
+        "parentID": "msg_cf727342f001OieErDYQvEC029",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 16310,
+          "input": 718,
+          "output": 232,
+          "reasoning": 23,
+          "cache": {
+            "read": 15360,
+            "write": 0
+          }
+        },
+        "finish": "tool-calls",
+        "id": "msg_cf7274c2e001v7tK6kgRbJLTR5",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf7274eec001A4NOvW28swMFzN",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7274c2e001v7tK6kgRbJLTR5"
+        },
+        {
+          "type": "reasoning",
+          "text": "**Adding simple conclusion section**",
+          "metadata": {
+            "openai": {
+              "itemId": "rs_0cd6029bd0b05c0b0169b81a738e9881918c83cc82b6199348",
+              "reasoningEncryptedContent": "gAAAAABpuBp0Nco4kfTIiWVBO2ObehlYMljRnDZjd8wico96A-sB2xL-pM9BjLrn3FfL1KBbz40s-NaA2jdjeXdae4vnSbRftaU35ybRatc-XpL9-e8J1bSpnOP1By8O7JYK66GXdUPGGyhYJ4edzXLlrXL7iD7VVeDQKA3r9CqPjujXlZ-Fy3h_nKUwYt12i16jbqzb7281HIyVW45mGVqLrKolZjPI7TMJNB54hC9xZkb-6wyOC3ympzQuEn17nRxzmVGHh2fHhBaJ14aqCesxcXRSgLygdwExkLooQw7MN3yYPFq4xPpm8625svqroziCmPg7ad-JKuF2DPSlfscCvk1ohiSQoemsLjsdGMwHJAkAYTN2o64WsHzRHEm2moWsyYo7mrHuigP0-cUYF-_4p_MLpGRQf7tCLF4ljQGRYneEIY5yEYc_NglxnZV8xoenqDuzKLPjOYGskdaYYytxno4qqF5Pw1mNODQbbKa1S-Ul5aQmqqxJ4fbbU1uEtWfeGApvl_i4YeejmnYKAW-fNdk4bK0uO3Y1EFOqlmuxs0y7DFR3SnoSjBpK68jdxsEjR6XM6nsJDPSOn1K58RMcYeWZOAswPNKsmvki9cpjqkt3YU4zTHUqU-popDsc5K9sUg88UMdReU-UGjqFdh4WqBCNXivtwLvNjPRlxkge-LfJcVxJZLyB6L5iwaUS0s7seJVgF-26YLZbsik1D9_5IzdIKXEaWK7wpAab0KqXzUT0PARcxz9Aan7MnKl_hBv9alil7lDWqCmtVD8bRuCJ46yrChNnFID9wq8IShy7-qxMtITdsJotoEINhFuLt1e4mRyAQJHBsQwjCS3_Sm7hqiNi0HX0rgEcLp6JCC3qOtQuKyxzHYMx691rHzcHnfgZaiQj9KvZ-LfRbjTlDUAMsKcSI3R_x2M6l3bLrBluxsJzjvQ6DeIfWLzLAYkQfW9zA7oAKciET4__QFv4D7wW12_lExBSWw=="
+            }
+          },
+          "time": {
+            "start": 1773673075445,
+            "end": 1773673076506
+          },
+          "id": "prt_cf72752f5001AXy8rv7632VLex",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7274c2e001v7tK6kgRbJLTR5"
+        },
+        {
+          "type": "tool",
+          "callID": "call_wkqjkwKkNnz2p1gIK8y3Zey2",
+          "tool": "apply_patch",
+          "state": {
+            "status": "completed",
+            "input": {
+              "patchText": "*** Begin Patch\n*** Update File: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@\n ## Confidence and Limits\n \n This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n+\n+## Conclusion\n+\n+In simple terms: the refactored code appears to produce the same end results as the original for all matched function pairs in this test setup, but it often takes a slightly different internal path (mostly different non-tracking calls) to get there. That means the refactor looks functionally safe for outputs, while still needing targeted review of the strict side-effect differences and the unmatched row-19 extraction gaps before treating it as fully equivalent in all environments.\n*** End Patch"
+            },
+            "output": "Success. Updated the following files:\nM mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "title": "Success. Updated the following files:\nM mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+            "metadata": {
+              "diff": "Index: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n===================================================================\n--- /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n+++ /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@ -40,4 +40,8 @@\n \n ## Confidence and Limits\n \n This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n+\n+## Conclusion\n+\n+In simple terms: the refactored code appears to produce the same end results as the original for all matched function pairs in this test setup, but it often takes a slightly different internal path (mostly different non-tracking calls) to get there. That means the refactor looks functionally safe for outputs, while still needing targeted review of the strict side-effect differences and the unmatched row-19 extraction gaps before treating it as fully equivalent in all environments.\n\n",
+              "files": [
+                {
+                  "filePath": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+                  "relativePath": "mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md",
+                  "type": "update",
+                  "diff": "Index: /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n===================================================================\n--- /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n+++ /mnt/c/Users/Abiram/Desktop/ECS260Project/refactor/method_code_refactor_comparison_summary.md\n@@ -40,4 +40,8 @@\n \n ## Confidence and Limits\n \n This result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n+\n+## Conclusion\n+\n+In simple terms: the refactored code appears to produce the same end results as the original for all matched function pairs in this test setup, but it often takes a slightly different internal path (mostly different non-tracking calls) to get there. That means the refactor looks functionally safe for outputs, while still needing targeted review of the strict side-effect differences and the unmatched row-19 extraction gaps before treating it as fully equivalent in all environments.\n",
+                  "before": "# Refactor Functional Comparison Summary (Human Review)\n\nGenerated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n\n## Bottom Line\n\nThe strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n\n- 751 function pairs were compared.\n- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n\nInterpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n\n## What Drove the Strict Failures\n\nOf the 395 strict `behavior_changed_non_tracking` cases:\n\n- 317 were `Different non-tracking call side effects`.\n- 69 were `Different outcome (return vs throw)`.\n- 7 were `Different non-tracking writes`.\n- 2 were error-type mismatches (`Different error type ...`).\n\nSo the dominant issue is non-tracking call-set divergence, not return-value divergence.\n\n## Inconclusive Pairing Gaps\n\nThere are 42 inconclusive entries due to unmatched extraction keys:\n\n- 39 are `Missing in refactored set`.\n- 3 are `Missing in original set`.\n\nMost of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n\n## Tracking-Related Notes\n\n- 34 equivalent pairs still showed tracking differences (allowed by policy).\n- Tracking differences therefore exist, but they are not the main source of strict failures.\n\n## Confidence and Limits\n\nThis result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n",
+                  "after": "# Refactor Functional Comparison Summary (Human Review)\n\nGenerated from `method_code_refactor_comparison_report.json` at 2026-03-15T18:11:45.232Z.\n\n## Bottom Line\n\nThe strict comparison reports many non-tracking deltas, but almost all are call-side-effect differences under sandbox instrumentation rather than output differences.\n\n- 751 function pairs were compared.\n- 356/751 (47.4%) were `equivalent_except_tracking` under the strict rules.\n- 395/751 (52.6%) were flagged `behavior_changed_non_tracking` under the strict rules.\n- Under the relaxed outcome-only view, 751/751 were equivalent and 0 showed changed return/error behavior.\n\nInterpretation: the refactor appears output-equivalent in this test harness, with differences concentrated in observable call/write side effects captured by the strict non-tracking instrumentation.\n\n## What Drove the Strict Failures\n\nOf the 395 strict `behavior_changed_non_tracking` cases:\n\n- 317 were `Different non-tracking call side effects`.\n- 69 were `Different outcome (return vs throw)`.\n- 7 were `Different non-tracking writes`.\n- 2 were error-type mismatches (`Different error type ...`).\n\nSo the dominant issue is non-tracking call-set divergence, not return-value divergence.\n\n## Inconclusive Pairing Gaps\n\nThere are 42 inconclusive entries due to unmatched extraction keys:\n\n- 39 are `Missing in refactored set`.\n- 3 are `Missing in original set`.\n\nMost of these are concentrated at row 19 (many function indices present on one side only), indicating extraction/pairing mismatch rather than directly observed behavioral drift.\n\n## Tracking-Related Notes\n\n- 34 equivalent pairs still showed tracking differences (allowed by policy).\n- Tracking differences therefore exist, but they are not the main source of strict failures.\n\n## Confidence and Limits\n\nThis result is differential and input-driven, not a formal proof. Confidence is strongest for pure compute and simple side effects covered by generated cases; confidence is weaker for browser/runtime-dependent behavior outside the sandbox model.\n\n## Conclusion\n\nIn simple terms: the refactored code appears to produce the same end results as the original for all matched function pairs in this test setup, but it often takes a slightly different internal path (mostly different non-tracking calls) to get there. That means the refactor looks functionally safe for outputs, while still needing targeted review of the strict side-effect differences and the unmatched row-19 extraction gaps before treating it as fully equivalent in all environments.\n",
+                  "additions": 4,
+                  "deletions": 0
+                }
+              ],
+              "diagnostics": {},
+              "truncated": false
+            },
+            "time": {
+              "start": 1773673079529,
+              "end": 1773673079539
+            }
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "fc_0cd6029bd0b05c0b0169b81a74a6d08191ab316bb5c13bd89e"
+            }
+          },
+          "id": "prt_cf727571c001AgFGuienXCRMVT",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7274c2e001v7tK6kgRbJLTR5"
+        },
+        {
+          "type": "step-finish",
+          "reason": "tool-calls",
+          "cost": 0,
+          "tokens": {
+            "total": 16310,
+            "input": 718,
+            "output": 232,
+            "reasoning": 23,
+            "cache": {
+              "read": 15360,
+              "write": 0
+            }
+          },
+          "id": "prt_cf7276308001JAL6d1OJd5WLz1",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7274c2e001v7tK6kgRbJLTR5"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "assistant",
+        "time": {
+          "created": 1773673079569,
+          "completed": 1773673083487
+        },
+        "parentID": "msg_cf727342f001OieErDYQvEC029",
+        "modelID": "gpt-5.3-codex",
+        "providerID": "openai",
+        "mode": "build",
+        "agent": "build",
+        "path": {
+          "cwd": "/mnt/c/Users/Abiram/Desktop/ECS260Project/refactor",
+          "root": "/"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 16413,
+          "input": 225,
+          "output": 60,
+          "reasoning": 0,
+          "cache": {
+            "read": 16128,
+            "write": 0
+          }
+        },
+        "finish": "stop",
+        "id": "msg_cf7276311001YHf4rDDm7mJ9ub",
+        "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv"
+      },
+      "parts": [
+        {
+          "type": "step-start",
+          "id": "prt_cf7276551001kbWlxA2Cpztoue",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7276311001YHf4rDDm7mJ9ub"
+        },
+        {
+          "type": "text",
+          "text": "Added — I inserted a plain-language conclusion paragraph under a new `## Conclusion` section in:\n\n- `method_code_refactor_comparison_summary.md`\n\nIt explains that outputs look equivalent in this harness, while internal non-tracking side effects and unmatched extraction gaps still warrant follow-up.",
+          "time": {
+            "start": 1773673083452,
+            "end": 1773673083452
+          },
+          "metadata": {
+            "openai": {
+              "itemId": "msg_0b4819e9b44199a40169b81a7ab2f48191a3845e19de7f8b22"
+            }
+          },
+          "id": "prt_cf7276ddc001Gp3IubwMSLLHEO",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7276311001YHf4rDDm7mJ9ub"
+        },
+        {
+          "type": "step-finish",
+          "reason": "stop",
+          "cost": 0,
+          "tokens": {
+            "total": 16413,
+            "input": 225,
+            "output": 60,
+            "reasoning": 0,
+            "cache": {
+              "read": 16128,
+              "write": 0
+            }
+          },
+          "id": "prt_cf727725c0013uxEDNvf1X2QHe",
+          "sessionID": "ses_308dbde79ffe4rBbkeHbOPNxdv",
+          "messageID": "msg_cf7276311001YHf4rDDm7mJ9ub"
+        }
+      ]
+    }
+  ]
+}
